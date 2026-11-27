@@ -1,125 +1,238 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>زيتون | Zaytoun Kitchen</title><meta name="description" content="زيتون: نموذج تجريبي لموقع مطعم مصري، منيو وحجز طاولة على واتساب."><meta name="theme-color" content="#1b281d"><style>
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}html,body{overflow-x:clip}
-.zy{--g:#1b281d;--g2:#243728;--g3:#2f4a35;--iv:#f6efe1;--iv2:#ece2cc;--cp:#b4602f;--cp2:#d98a54;--gl:#c9a35c;--ink:#22281f;--mt:#7a7461;background:var(--iv);color:var(--ink);font-family:"Amiri","Noto Naskh Arabic","Scheherazade New","Cairo","Tajawal","Segoe UI",serif;font-size:19px;line-height:1.8;min-height:100vh}
-.zy a{color:inherit;text-decoration:none}.zy button,.zy input,.zy select{font-family:inherit}
-.zy ::selection{background:var(--cp);color:#fff}
-.zy .demo{background:var(--g);color:var(--gl);text-align:center;font-size:14px;padding:5px 12px;letter-spacing:.5px;border-bottom:1px solid rgba(201,163,92,.3)}
-.zy .hd{position:absolute;inset-inline:0;top:34px;z-index:10;display:flex;align-items:center;gap:26px;padding:20px 5vw}
-.zy .hd.fx{position:fixed;top:0;background:rgba(27,40,29,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:12px 5vw;border-bottom:1px solid rgba(201,163,92,.25)}
-.zy .lg{display:flex;flex-direction:column;line-height:1;margin-inline-end:auto;color:var(--iv)}.zy .lg b{font-size:36px;font-weight:700}.zy .lg small{font-family:Georgia,serif;font-size:10px;letter-spacing:5px;color:var(--gl);margin-top:6px;direction:ltr;text-align:right}
-.zy .lk{display:flex;gap:28px}.zy .lk a{color:#e7dcc3;font-size:18px;position:relative}.zy .lk a::after{content:"";position:absolute;inset-inline:0;bottom:-2px;height:1px;background:var(--gl);transform:scaleX(0);transition:transform .35s}.zy .lk a:hover::after{transform:scaleX(1)}
-.zy .btn{display:inline-block;background:var(--cp);color:#fff;border:1px solid var(--cp);padding:12px 34px;font-size:18px;cursor:pointer;border-radius:60px;transition:background .3s,transform .3s,box-shadow .3s;font-weight:700}
-.zy .btn:hover{background:var(--cp2);border-color:var(--cp2);transform:translateY(-2px);box-shadow:0 12px 30px rgba(180,96,47,.35)}
-.zy .btn.o{background:transparent;border-color:rgba(246,239,225,.5);color:var(--iv)}.zy .btn.o:hover{border-color:var(--gl);color:var(--gl);box-shadow:none;background:transparent}
-.zy .bg{display:none}
-.zy .hero{position:relative;background:radial-gradient(ellipse at 25% 40%,#2c4531 0,var(--g) 65%);color:var(--iv);padding:150px 5vw 100px;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;min-height:800px;overflow:hidden}
-.zy .hero::before{content:"";position:absolute;inset:26px 26px;border:1px solid rgba(201,163,92,.35);pointer-events:none}
-.zy .hero::after{content:"";position:absolute;inset:34px 34px;border:1px solid rgba(201,163,92,.15);pointer-events:none}
-.zy .ey{font-family:Georgia,serif;font-size:13px;letter-spacing:6px;color:var(--gl);margin-bottom:20px;direction:ltr;text-align:right}
-.zy h1{font-size:clamp(58px,8.4vw,128px);line-height:1.12;font-weight:700}.zy h1 em{font-style:normal;color:var(--cp2);position:relative}
-.zy .hero p.sub{font-size:clamp(19px,2vw,24px);color:#d8cfb8;max-width:520px;margin:20px 0 36px}
-.zy .hero .bt{display:flex;gap:14px;flex-wrap:wrap}
-.zy .arch{position:relative;width:min(420px,84%);margin-inline:auto;aspect-ratio:3/4.1;border-radius:999px 999px 18px 18px;background:linear-gradient(180deg,#e9dcb9,#d6c293);border:8px solid var(--g);box-shadow:0 0 0 1px var(--gl),0 0 0 14px var(--g),0 0 0 15px rgba(201,163,92,.6),0 40px 80px rgba(0,0,0,.45);display:grid;place-items:center;overflow:hidden}
-.zy .arch svg{width:82%;animation:sw 7s ease-in-out infinite;transform-origin:50% 100%}
-@keyframes sw{50%{transform:rotate(2.5deg)}}
-.zy .arch span{position:absolute;bottom:18px;font-size:13px;color:#6d5a2c;letter-spacing:1px;font-family:"Cairo",sans-serif}
-.zy .sun{position:absolute;top:13%;inset-inline-start:22%;width:70px;height:70px;border-radius:50%;background:radial-gradient(circle,#f7e3ac,#e3b768);opacity:.9}
-.zy .orn{text-align:center;color:var(--gl);letter-spacing:14px;font-size:16px;padding:46px 0 0}
-.zy .band{position:relative;background:var(--g);color:var(--iv);padding:90px 5vw;overflow:hidden}
-.zy .band .in{max-width:900px;margin:0 auto;text-align:center;position:relative}
-.zy .band small{font-family:Georgia,serif;font-size:13px;letter-spacing:7px;color:var(--gl)}
-.zy .band h2{font-size:clamp(38px,6vw,76px);line-height:1.2;margin:8px 0 18px;font-weight:700;color:var(--cp2)}
-.zy .band p{font-size:clamp(18px,2.2vw,24px);color:#d8cfb8}.zy .band p b{color:var(--iv);font-size:1.3em;display:block;margin-bottom:6px}
-.zy .band::before,.zy .band::after{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(201,163,92,.25);border-radius:50%;top:-80px}.zy .band::before{inset-inline-start:-80px}.zy .band::after{inset-inline-end:-80px;top:auto;bottom:-80px}
-.zy .wrap{max-width:1100px;margin:0 auto;padding:100px 5vw}
-.zy .ttl{text-align:center;margin-bottom:46px}.zy .ttl div{font-family:Georgia,serif;letter-spacing:8px;font-size:13px;color:var(--cp)}
-.zy .ttl h2{font-size:clamp(50px,7vw,92px);line-height:1.15;font-weight:700;color:var(--g3)}
-.zy .ttl::after{content:"";display:block;width:90px;height:1px;background:var(--gl);margin:14px auto 0;box-shadow:0 5px 0 -0px transparent}
-.zy .cat{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-bottom:38px}
-.zy .cat button{background:transparent;border:1px solid rgba(47,74,53,.3);color:var(--g3);padding:8px 26px;border-radius:60px;font-size:18px;cursor:pointer;transition:all .3s}.zy .cat button:hover{border-color:var(--cp)}.zy .cat button.on{background:var(--g3);color:var(--iv);border-color:var(--g3)}
-.zy #items{max-width:780px;margin:0 auto}
-.zy .it{display:flex;align-items:center;gap:16px;padding:14px 0;animation:fi .6s both}.zy .it .ph{width:96px;height:72px;object-fit:cover;border-radius:12px;flex:none;background:#e9dcb9;box-shadow:0 0 0 1px rgba(47,74,53,.18),0 6px 14px rgba(47,74,53,.14)}.zy .dt{align-self:center}
-.zy .it>div{flex:none;max-width:62%}.zy .it b{font-size:25px;font-weight:700;color:var(--g)}.zy .it p{color:var(--mt);font-size:16px;line-height:1.5;font-family:"Cairo",sans-serif}
-.zy .dt{flex:1;border-bottom:2px dotted rgba(47,74,53,.35);transform:translateY(-6px)}
-.zy .it em{font-style:normal;font-size:24px;color:var(--cp);font-weight:700;white-space:nowrap}
-@keyframes fi{from{opacity:0;transform:translateY(10px)}}
-.zy .nt{text-align:center;color:var(--mt);font-size:15px;margin-top:30px;font-family:"Cairo",sans-serif}
-.zy .hrs{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid rgba(47,74,53,.25);padding:40px 0}
-.zy .hrs>div{text-align:center;padding:0 20px}.zy .hrs>div+div{border-inline-start:1px solid rgba(47,74,53,.2)}
-.zy .hrs h3{font-size:26px;color:var(--cp);margin-bottom:6px}.zy .hrs p{color:var(--ink);font-size:19px}
-.zy .res{background:var(--g2);color:var(--iv);position:relative;overflow:hidden}
-.zy .res .wrap{padding-block:110px}
-.zy .rg{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-.zy .rg h2{font-size:clamp(46px,6.5vw,86px);line-height:1.15;font-weight:700;color:var(--cp2);margin-bottom:12px}.zy .rg .l p{color:#d8cfb8;font-size:21px;max-width:420px}
-.zy .rg .r{background:var(--iv);color:var(--ink);padding:44px 38px 38px;border-radius:260px 260px 22px 22px;box-shadow:0 0 0 1px var(--gl),0 0 0 10px var(--g2),0 0 0 11px rgba(201,163,92,.5),0 40px 70px rgba(0,0,0,.4)}
-.zy label{display:block;font-size:16px;color:var(--mt);margin:12px 0 4px;font-family:"Cairo",sans-serif}
-.zy .rg .r label:first-child{margin-top:44px}
-.zy input,.zy select{width:100%;background:#fffaf0;border:1px solid rgba(47,74,53,.3);padding:11px 16px;font-size:18px;border-radius:12px;outline:none;color:var(--ink);transition:border-color .3s}.zy input:focus,.zy select:focus{border-color:var(--cp)}
-.zy .rg .btn{width:100%;margin-top:22px;text-align:center}
-.zy footer{background:var(--g);color:#bdb393;text-align:center;padding:30px 5vw;font-size:15px;font-family:"Cairo",sans-serif;border-top:1px solid rgba(201,163,92,.25)}
-.zy .rv{opacity:0;transform:translateY(30px);transition:opacity 1s,transform 1s}.zy .rv.on{opacity:1;transform:none}
-html.st .zy .rv{opacity:1;transform:none;transition:none}html.st .zy .it{animation:none}html.st .zy .arch svg{animation:none}
-@media(max-width:900px){.zy .lk{display:none;position:absolute;top:100%;inset-inline:0;flex-direction:column;gap:6px;background:var(--g);padding:12px 5vw 22px}.zy .lk.open{display:flex}.zy .bg{display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(201,163,92,.5);background:transparent;color:var(--iv);border-radius:50%;font-size:20px;cursor:pointer}.zy .hd{gap:14px}.zy .hd .btn{padding:8px 16px;font-size:15px}.zy .hero{grid-template-columns:1fr;padding-top:130px;min-height:0;text-align:center}.zy .hero .ey{text-align:center}.zy .hero p.sub{margin-inline:auto}.zy .hero .bt{justify-content:center}.zy .hero::before{inset:14px}.zy .hero::after{inset:20px}.zy .arch{width:min(300px,80%)}.zy .hrs{grid-template-columns:1fr;gap:26px}.zy .hrs>div+div{border:0;border-top:1px solid rgba(47,74,53,.2);padding-top:26px}.zy .rg{grid-template-columns:1fr;gap:36px}.zy .wrap{padding-block:64px}.zy .rg .r{padding-inline:24px}.zy .it>div{max-width:50%}.zy .it .ph{width:76px;height:76px}.zy .it{gap:12px}.zy .it em{font-size:20px}.zy .it b{font-size:21px}}
-@media(prefers-reduced-motion:reduce){.zy *{animation:none!important;transition:none!important}.zy .rv{opacity:1;transform:none}}
-</style><link rel="canonical" href="https://kareemsakroo67-ship-it.github.io/zaytoun/"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b281d'/%3E%3Ctext x='32' y='45' font-size='38' font-weight='900' text-anchor='middle' font-family='Arial' fill='%23e0a35a'%3EZ%3C/text%3E%3C/svg%3E"><meta name="format-detection" content="telephone=no"><meta property="og:type" content="website"><meta property="og:locale" content="ar_EG"><meta property="og:url" content="https://kareemsakroo67-ship-it.github.io/zaytoun/"><meta property="og:title" content="زيتون | Zaytoun Kitchen"><meta property="og:description" content="زيتون: نموذج تجريبي لموقع مطعم مصري، منيو وحجز طاولة على واتساب."><meta property="og:image" content="https://kareemsakroo67-ship-it.github.io/assets/zaytoun.jpg"><meta name="twitter:card" content="summary_large_image">
-<style>a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid #e0a35a;outline-offset:3px}.demo a{text-decoration:underline;font-weight:900;margin-inline-start:6px}footer a{text-decoration:underline}.vfx{font-size:14px;min-height:20px;margin-top:6px;color:#ff9a8a;font-weight:700}@keyframes hxu{from{opacity:0;transform:translateY(16px)}}.hero h1{animation:hxu .8s cubic-bezier(.2,.8,.2,1) .05s both}.hero p{animation:hxu .8s cubic-bezier(.2,.8,.2,1) .2s both}.hero .bt{animation:hxu .8s cubic-bezier(.2,.8,.2,1) .35s both}html.st .hero h1,html.st .hero p,html.st .hero .bt{animation:none}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1!important;transform:none!important}}</style><noscript><style>.rv{opacity:1!important;transform:none!important}</style></noscript><script>window.__tr=function(s){return s};try{var l=new URLSearchParams(location.search).get("lang")||localStorage.getItem("ks_lang")||"ar";if(l==="en"){document.documentElement.lang="en";document.documentElement.dir="ltr"}}catch(e){}</script>
-<style>.lgx{position:fixed;inset-inline-start:14px;bottom:14px;z-index:9999;min-width:46px;height:42px;padding:0 14px;border-radius:12px;border:1.5px solid #e0a35a;background:#1b281d;color:#e0a35a;font:800 14px/1 Arial,sans-serif;cursor:pointer;box-shadow:0 6px 24px rgba(0,0,0,.35)}.lgx:hover{filter:brightness(1.2)}</style><style>.cr{display:block;margin-top:8px;opacity:.75;font-size:13px}</style><style>.tgl{margin:14px 0 4px;font-size:clamp(18px,2.2vw,23px);font-weight:700;color:#e0a35a;display:flex;align-items:center;gap:12px;line-height:1.5}.tgl::before{content:"";width:34px;height:2px;background:currentColor;flex:none;opacity:.8}</style></head><body>
-<div class="zy" id="r"><div class="demo">نسخة تجريبية: الأسماء والأسعار والمواعيد مؤقتة <a href="../">→ كل الأعمال</a></div>
-<header class="hd" id="hd"><a class="lg" href="#top"><b>زيتون</b><small>ZAYTOUN KITCHEN</small></a>
-<nav class="lk" id="lk"><a href="#about">طبق اليوم</a><a href="#menu">المنيو</a><a href="#hrs">المواعيد</a><a href="#book">احجز طاولة</a></nav>
-<a class="btn" href="#book">احجز طاولتك</a><button class="bg" id="bg" type="button" aria-label="القائمة" aria-expanded="false">&#9776;</button></header>
-<section class="hero" id="top"><div><div class="ey">EGYPTIAN HOME KITCHEN</div><h1>أكل بيتي،<br>بطعم <em>الأصل</em></h1><p class="tgl">طعم البيت، على نار هادية.</p>
-<p class="sub">مطبخ مصري على نار هادية، بمكونات طازجة كل يوم. تعالى اتغدى معانا أو اطلب لحد البيت.</p>
-<div class="bt"><a class="btn" href="#book">احجز طاولتك</a><a class="btn o" href="#menu">شوف المنيو</a></div></div>
-<div class="arch" aria-hidden="true"><i class="sun"></i><svg viewBox="0 0 120 130"><g fill="none" stroke="#2f4a35" stroke-width="2.6" stroke-linecap="round"><path d="M22 124 C48 100 74 70 104 18"/><path d="M42 98 C30 84 33 72 43 64 C52 74 52 88 42 98Z" fill="#2f4a35"/><path d="M58 82 C46 68 51 56 61 51 C68 61 68 73 58 82Z" fill="#2f4a35"/><path d="M76 60 C67 48 71 37 81 34 C86 43 86 53 76 60Z" fill="#2f4a35"/><path d="M92 38 C86 30 88 22 96 19 C99 26 98 33 92 38Z" fill="#2f4a35"/><path d="M50 104 C62 96 70 98 76 106 C66 112 56 112 50 104Z" fill="#3d6347"/><path d="M68 84 C80 76 88 78 94 86 C84 92 74 92 68 84Z" fill="#3d6347"/><ellipse cx="88" cy="104" rx="10" ry="14" fill="#b4602f" stroke="none"/><ellipse cx="64" cy="122" rx="9" ry="11" fill="#8a3e1d" stroke="none"/></g></svg><span>رسم تعبيري، بدل صورة الطبق</span></div></section>
-<section class="band" id="about"><div class="in rv"><small>TODAY'S DISH</small><h2>طبق اليوم</h2><p><b>طاجن بامية باللحمة</b>بامية فرز أول على نار هادية مع صلصة طماطم وثوم. السعر التجريبي 165 جنيه.</p></div></section>
-<div class="orn">✦ ✦ ✦</div>
-<div class="wrap" id="menu"><div class="ttl rv"><div>MENU</div><h2>المنيو</h2></div>
-<div class="mn rv"><div class="cat" id="cat"></div><div id="items"></div></div><p class="nt">أسعار تجريبية تتعدل حسب المطعم.</p></div>
-<div class="wrap" id="hrs" style="padding-top:0"><div class="hrs rv"><div><h3>المواعيد</h3><p>كل يوم<br>12 ظهرًا - 12 بالليل</p></div><div><h3>العنوان</h3><p>عنوان المطعم هنا<br>المدينة، مصر</p></div><div><h3>التوصيل</h3><p>اطلب على واتساب<br>وبنوصلك</p></div></div></div>
-<section class="res" id="book"><div class="wrap"><div class="rg"><div class="l rv"><h2>احجز طاولة</h2><p>اكتب بياناتك وهتتحول لرسالة واتساب جاهزة نبعتها للمطعم.</p></div>
-<div class="r rv"><label for="nm">الاسم</label><input id="nm"><label for="ph">الموبايل</label><input id="ph" inputmode="tel"><label for="gs">عدد الأفراد</label><select id="gs"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>8</option></select><label for="dt">الميعاد</label><input id="dt" placeholder="مثلًا: الجمعة 8 مساءً"><a class="btn" id="wa" target="_blank" rel="noopener">احجز على واتساب</a></div></div></div></section>
-<footer>زيتون · نموذج تجريبي · تصميم <a href="../">كريم صقر</a><small class="cr" id="cr">صور الأطباق من Wikimedia Commons بتراخيص حرة. <a href="img/CREDITS.txt">تفاصيل الصور والمصورين</a></small></footer>
-</div><script>(function(){const R=document.getElementById("r");const WHATSAPP="201143586945";const DEMO=(document.documentElement.lang==="en")?"[Concept demo] ":"[نموذج تجريبي] ";
-if(/static/.test(location.search))document.documentElement.classList.add("st");
-const $=s=>R.querySelector(s);
-const MENU={"المقبلات":[["سلطة بلدي","خيار وطماطم وجرجير وليمون",45],["بابا غنوج","باذنجان مشوي وطحينة",50],["ورق عنب","محشي بالأرز والخضرة",70]],"الأطباق الرئيسية":[["كفتة مشوية","مع أرز وسلطة",140],["نص فرخة مشوية","مع بطاطس وسلطة",120],["طاجن بامية باللحمة","على نار هادية",165],["ملوخية بالفراخ","مع أرز وعيش",110]],"الحلويات":[["أم علي","بالمكسرات والقشطة",60],["مهلبية","بماء الورد",40],["كنافة بالقشطة","ساخنة من الفرن",65]],"المشروبات":[["عصير ليمون بالنعناع","",35],["شاي بالنعناع","",20],["قهوة تركي","",30]]};
-const IMG={"سلطة بلدي": "salad", "بابا غنوج": "baba", "ورق عنب": "warak", "كفتة مشوية": "kofta", "نص فرخة مشوية": "chicken", "طاجن بامية باللحمة": "bamia", "ملوخية بالفراخ": "molokhia", "أم علي": "omali", "مهلبية": "muhallebia", "كنافة بالقشطة": "kunafa", "عصير ليمون بالنعناع": "lemon", "شاي بالنعناع": "tea", "قهوة تركي": "coffee"};const cat=$("#cat"),box=$("#items");
-function show(k){box.innerHTML=MENU[k].map((r,i)=>'<div class="it" style="animation-delay:'+i*.07+'s"><img class="ph" src="img/'+IMG[r[0]]+'.webp" alt="صورة '+r[0]+'" width="96" height="72" loading="lazy" decoding="async"><div><b>'+r[0]+'</b>'+(r[1]?'<p>'+r[1]+'</p>':'')+'</div><span class="dt"></span><em>'+r[2]+' ج</em></div>').join("")}
-Object.keys(MENU).forEach((k,i)=>{const b=document.createElement("button");b.type="button";b.textContent=k;if(!i)b.className="on";b.addEventListener("click",()=>{cat.querySelectorAll("button").forEach(x=>x.classList.remove("on"));b.classList.add("on");show(k)});cat.appendChild(b)});
-show(Object.keys(MENU)[0]);
-function wa(){const t=(document.documentElement.lang==="en")?"Hi, I'm "+($("#nm").value||"")+" and I'd like to book a table for "+$("#gs").value+" people. Date and time: "+($("#dt").value||"")+". My mobile: "+($("#ph").value||""):"أهلًا، أنا "+($("#nm").value||"")+" وعايز أحجز طاولة لـ "+$("#gs").value+" أفراد، الميعاد: "+($("#dt").value||"")+". موبايلي: "+($("#ph").value||"");$("#wa").href="https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(DEMO+t)}
-R.querySelectorAll("#nm,#ph,#gs,#dt").forEach(e=>e.addEventListener("input",wa));wa();
-const lk=$("#lk"),bg=$("#bg"),hd=$("#hd");bg.addEventListener("click",()=>{const o=lk.classList.toggle("open");bg.setAttribute("aria-expanded",o)});
-addEventListener("scroll",()=>hd.classList.toggle("fx",scrollY>200),{passive:true});
-R.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{e.preventDefault();lk.classList.remove("open");const t=R.querySelector(a.getAttribute("href"));t&&t.scrollIntoView({behavior:"smooth"})}));
-const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("on");io.unobserve(x.target)}}),{threshold:.12});R.querySelectorAll(".rv").forEach(e=>io.observe(e));
-})()</script><script>(function(){var a=document.getElementById("wa"),n=document.getElementById("nm"),p=document.getElementById("ph");if(!a||!n||!p)return;var m=document.createElement("div");m.className="vfx";m.setAttribute("role","alert");a.parentNode.appendChild(m);
-a.addEventListener("click",function(e){var ok=n.value.trim().length>=2,ph=/^01[0125][0-9]{8}$/.test(p.value.replace(/[\s-]/g,""));n.setAttribute("aria-invalid",!ok);p.setAttribute("aria-invalid",!ph);if(!ok||!ph){e.preventDefault();m.textContent=!ok?"اكتب اسمك الأول":"اكتب رقم موبايل صحيح (01XXXXXXXXX)";(!ok?n:p).focus()}else m.textContent=""})})()</script><script>(function(){"use strict";
-var D={"طعم البيت، على نار هادية.":"The taste of home, cooked slow.","صور الأطباق من Wikimedia Commons بتراخيص حرة.":"Dish photos from Wikimedia Commons under free licenses.","تفاصيل الصور والمصورين":"Photo and author details","صورة سلطة بلدي":"Photo: Baladi salad","صورة بابا غنوج":"Photo: Baba ghanoush","صورة ورق عنب":"Photo: Stuffed vine leaves","صورة كفتة مشوية":"Photo: Grilled kofta","صورة نص فرخة مشوية":"Photo: Half grilled chicken","صورة طاجن بامية باللحمة":"Photo: Okra and beef tagine","صورة ملوخية بالفراخ":"Photo: Molokhia with chicken","صورة أم علي":"Photo: Om Ali","صورة مهلبية":"Photo: Muhallebia","صورة كنافة بالقشطة":"Photo: Kunafa with cream","صورة عصير ليمون بالنعناع":"Photo: Lemon mint juice","صورة شاي بالنعناع":"Photo: Mint tea","صورة قهوة تركي":"Photo: Turkish coffee","زيتون | Zaytoun Kitchen": "Zaytoun Kitchen | Concept website", "زيتون: نموذج تجريبي لموقع مطعم مصري، منيو وحجز طاولة على واتساب.": "Zaytoun: a concept website for an Egyptian home-style restaurant with a menu and table booking on WhatsApp.", "نسخة تجريبية: الأسماء والأسعار والمواعيد مؤقتة": "Concept demo: names, prices and times are placeholders", "→ كل الأعمال": "← All work", "زيتون": "Zaytoun", "طبق اليوم": "Dish of the day", "المنيو": "Menu", "المواعيد": "Hours", "احجز طاولة": "Book a table", "احجز طاولتك": "Book your table", "القائمة": "Menu", "أكل بيتي،": "Home cooking,", "بطعم": "with the taste of", "الأصل": "the original", "مطبخ مصري على نار هادية، بمكونات طازجة كل يوم. تعالى اتغدى معانا أو اطلب لحد البيت.": "Egyptian cooking on a slow flame, with fresh ingredients every day. Come eat with us or order to your door.", "شوف المنيو": "See the menu", "رسم تعبيري، بدل صورة الطبق": "An illustration in place of a photo of the dish", "طاجن بامية باللحمة": "Okra and beef tagine", "بامية فرز أول على نار هادية مع صلصة طماطم وثوم. السعر التجريبي 165 جنيه.": "Prime okra slow-cooked in a tomato and garlic sauce. Placeholder price: 165 EGP.", "أسعار تجريبية تتعدل حسب المطعم.": "Placeholder prices, to be adjusted by the restaurant.", "كل يوم": "Every day", "12 ظهرًا - 12 بالليل": "12 noon - 12 midnight", "العنوان": "Address", "عنوان المطعم هنا": "Restaurant address here", "المدينة، مصر": "City, Egypt", "التوصيل": "Delivery", "اطلب على واتساب": "Order on WhatsApp", "وبنوصلك": "and we deliver", "اكتب بياناتك وهتتحول لرسالة واتساب جاهزة نبعتها للمطعم.": "Enter your details and they turn into a ready WhatsApp message to the restaurant.", "الاسم": "Name", "الموبايل": "Mobile", "عدد الأفراد": "Party size", "الميعاد": "Date and time", "مثلًا: الجمعة 8 مساءً": "For example: Friday 8 pm", "احجز على واتساب": "Book on WhatsApp", "زيتون · نموذج تجريبي · تصميم": "Zaytoun · Concept demo · Designed by", "كريم صقر": "Kareem Sakr", "[نموذج تجريبي]": "[Concept demo]", "المقبلات": "Starters", "سلطة بلدي": "Baladi salad", "خيار وطماطم وجرجير وليمون": "Cucumber, tomato, arugula and lemon", "بابا غنوج": "Baba ghanoush", "باذنجان مشوي وطحينة": "Grilled eggplant and tahini", "ورق عنب": "Stuffed vine leaves", "محشي بالأرز والخضرة": "Stuffed with rice and herbs", "الأطباق الرئيسية": "Main dishes", "كفتة مشوية": "Grilled kofta", "مع أرز وسلطة": "With rice and salad", "نص فرخة مشوية": "Half grilled chicken", "مع بطاطس وسلطة": "With fries and salad", "على نار هادية": "Slow-cooked", "ملوخية بالفراخ": "Molokhia with chicken", "مع أرز وعيش": "With rice and bread", "الحلويات": "Desserts", "أم علي": "Om Ali", "بالمكسرات والقشطة": "With nuts and cream", "مهلبية": "Muhallebia", "بماء الورد": "With rose water", "كنافة بالقشطة": "Kunafa with cream", "ساخنة من الفرن": "Hot from the oven", "المشروبات": "Drinks", "عصير ليمون بالنعناع": "Lemon mint juice", "شاي بالنعناع": "Mint tea", "قهوة تركي": "Turkish coffee", "ج": "EGP", "اكتب اسمك الأول": "Enter your first name", "اكتب رقم موبايل صحيح (01XXXXXXXXX)": "Enter a valid mobile number (01XXXXXXXXX)"},RAW=[],AR=/[\u0600-\u06FF]/,d=document,h=d.documentElement,KEY="ks_lang";
-var RULES=RAW.map(function(r){return[new RegExp(r[0],"g"),r[1]]});
-var KS=Object.keys(D).filter(function(k){return k.length>=5}).sort(function(a,b){return b.length-a.length});
-var ATTRS=["placeholder","aria-label","title","alt"],lang=h.lang==="en"?"en":"ar",done=new Set(),obs=null;
-RAW=RAW.concat([["(\\d+) ج(?![\\u0600-\\u06FF])","$1 EGP"],["(\\d+) منتج","$1 products"]]);
-var RULES=RAW.map(function(r){return[new RegExp(r[0],"g"),r[1]]});
-function rules(s){RULES.forEach(function(r){s=s.replace(r[0],r[1])});return s}
-function tr(s){if(s==null)return s;var t=s.trim();if(!t||!AR.test(t))return s;var i=s.indexOf(t),lead=s.slice(0,i),trail=s.slice(i+t.length);
- if(Object.prototype.hasOwnProperty.call(D,t))return lead+D[t]+trail;
- var r=rules(t);if(r!==t&&!AR.test(r))return lead+r+trail;
- for(var j=0;j<KS.length;j++){if(r.indexOf(KS[j])>-1)r=r.split(KS[j]).join(D[KS[j]])}
- return lead+rules(r)+trail}
-window.__tr=function(s){return lang==="en"?tr(s):s};window.__E=function(){return lang==="en"};
-function node(n){if(n.nodeType===3){var p=n.parentNode&&n.parentNode.nodeName;if(p==="SCRIPT"||p==="STYLE")return;var v=n.nodeValue;if(!AR.test(v))return;var r=tr(v);if(r!==v){n.__o=v;n.nodeValue=r;done.add(n)}}
- else if(n.nodeType===1){if(n.nodeName==="SCRIPT"||n.nodeName==="STYLE")return;ATTRS.forEach(function(a){var v=n.getAttribute(a);if(v&&AR.test(v)){var r=tr(v);if(r!==v){n.setAttribute("data-o-"+a,v);n.setAttribute(a,r)}}});for(var c=n.firstChild;c;c=c.nextSibling)node(c)}}
-function undo(){done.forEach(function(n){if(n.__o!=null){n.nodeValue=n.__o;n.__o=null}});done.clear();d.querySelectorAll("[data-o-placeholder],[data-o-aria-label],[data-o-title],[data-o-alt]").forEach(function(e){ATTRS.forEach(function(a){var o=e.getAttribute("data-o-"+a);if(o!=null){e.setAttribute(a,o);e.removeAttribute("data-o-"+a)}})})}
-function meta(){var m=d.querySelector('meta[name="description"]');if(lang==="en"){if(!d.__ot){d.__ot=d.title;d.__od=m&&m.content}d.title=tr(d.__ot);if(m)m.content=tr(d.__od)}else if(d.__ot){d.title=d.__ot;if(m)m.content=d.__od}}
-function watch(){if(!obs){obs=new MutationObserver(function(ms){if(lang!=="en")return;obs.disconnect();ms.forEach(function(m){if(m.type==="characterData"){var n=m.target;if(AR.test(n.nodeValue)){n.__o=null;node(n)}}else m.addedNodes.forEach(node)});obs.observe(d.body,cfg)})}obs.observe(d.body,cfg)}
-var cfg={childList:true,subtree:true,characterData:true};
-function set(l,quiet){lang=l;h.lang=l;var dir=l==="ar"?"rtl":"ltr";h.dir=dir;d.querySelectorAll("[dir]").forEach(function(e){e.dir=dir});try{localStorage.setItem(KEY,l)}catch(e){}
- if(obs)obs.disconnect();undo();if(l==="en"){node(d.body);watch()}meta();
- var b=d.getElementById("lgx");if(b){b.textContent=l==="en"?"عربي":"EN";b.setAttribute("aria-label",l==="en"?"التبديل إلى العربية":"Switch to English")}
- if(!quiet){var f=d.getElementById("nm");if(f)f.dispatchEvent(new Event("input",{bubbles:true}));var q=d.getElementById("q");if(q&&q.tagName==="SELECT")q.dispatchEvent(new Event("change",{bubbles:true}));d.dispatchEvent(new Event("langchange"))}}
-var b=d.createElement("button");b.id="lgx";b.type="button";b.className="lgx";b.addEventListener("click",function(){set(lang==="en"?"ar":"en")});d.body.appendChild(b);
-set(lang,false);
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kareem Sakr | Web Developer Portfolio</title>
+<meta name="description" content="Kareem Sakr, engineering student and web developer in Egypt. Bilingual (Arabic RTL and English) concept projects: gym, restaurant, clinic, sweets shop and electronics store websites built with HTML, CSS and JavaScript.">
+<link rel="canonical" href="https://kareemsakroo67-ship-it.github.io/">
+<meta name="theme-color" content="#05060a">
+<meta property="og:type" content="website"><meta property="og:url" content="https://kareemsakroo67-ship-it.github.io/">
+<meta property="og:title" content="Kareem Sakr | Web Developer Portfolio">
+<meta property="og:description" content="Engineering student building bilingual (Arabic and English) websites. Five concept projects: NABD, ZAYTOON, SALAMA, HALAWA BAYTNA, VOLT.">
+<meta property="og:image" content="https://kareemsakroo67-ship-it.github.io/assets/portrait.webp"><meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2319f0ff'/%3E%3Ctext x='32' y='45' font-size='38' font-weight='900' text-anchor='middle' font-family='Arial' fill='%2305060a'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="preload" as="image" href="assets/portrait.webp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Kareem Sakr","jobTitle":"Web developer (student)","url":"https://kareemsakroo67-ship-it.github.io/","sameAs":["https://github.com/kareemsakroo67-ship-it","https://www.linkedin.com/in/kareem-sakr-ba9810452"],"email":"Kareemsakroo67@gmail.com"}</script>
+<script>(function(){try{var d=document.documentElement,q=location.search,f=/[?&]intro/.test(q);if(!/static/.test(q)&&!matchMedia("(prefers-reduced-motion: reduce)").matches&&(f||!sessionStorage.getItem("ks_intro"))){var l=localStorage.getItem("ks_lang")||"en";if(/[?&]lang=ar/.test(q))l="ar";if(/[?&]lang=en/.test(q))l="en";d.lang=l;d.dir=l==="ar"?"rtl":"ltr";d.className+=" intro";sessionStorage.setItem("ks_intro","1")}}catch(e){}})()</script>
+<style>
+:root{--bg:#05060a;--bg2:#0a0d13;--card:#0e1219;--cy:#19f0ff;--vi:#7a5cff;--tx:#eef2f7;--mut:#94a0b0;--ln:rgba(255,255,255,.12);--mono:ui-monospace,SFMono-Regular,Consolas,Menlo,monospace;--ar:"Cairo","Tajawal","Noto Sans Arabic","Segoe UI",Tahoma,Arial,sans-serif;--en:Inter,"Segoe UI","Helvetica Neue",Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--tx);font-family:var(--en);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+html[lang=ar] body{font-family:var(--ar)}
+html[lang=en] .ar,html[lang=ar] .en{display:none!important}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--cy);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;inset-inline-start:8px;top:-60px;background:#000;padding:8px 16px;border-radius:8px;z-index:100}.skip:focus{top:8px}
+nav.top{position:fixed;top:0;inset-inline:0;z-index:50;display:flex;align-items:center;gap:10px;padding:14px 5vw;transition:.3s}
+nav.top.sc{background:rgba(5,6,10,.88);backdrop-filter:blur(10px);padding:9px 5vw;border-bottom:1px solid var(--ln)}
+.lg{font-weight:800;font-size:18px;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.lg b{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--cy);color:var(--bg);font-family:var(--en)}
+.lk{display:flex;gap:4px;margin-inline-start:auto}
+.lk a{color:#b3bcc9;padding:6px 12px;border-radius:6px;font-size:14px}.lk a:hover{color:var(--cy)}
+.pill{border:1.5px solid rgba(255,255,255,.3);background:transparent;border-radius:8px;height:38px;padding:0 14px;cursor:pointer;font-weight:700;font-size:14px}
+.pill:hover{border-color:var(--cy);color:var(--cy)}
+.bur{display:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--cy);color:var(--bg);border:2px solid var(--cy);border-radius:10px;padding:12px 24px;font-weight:800;font-size:16px;cursor:pointer;transition:transform .2s,box-shadow .2s;box-shadow:0 0 26px rgba(25,240,255,.3)}
+.btn:hover{transform:translateY(-2px)}
+.btn.ol{background:transparent;color:var(--tx);border-color:rgba(255,255,255,.4);box-shadow:none}.btn.ol:hover{border-color:var(--cy);color:var(--cy)}
+.btn.sm{padding:8px 16px;font-size:14px;box-shadow:none}
+section{position:relative;padding:96px 5vw}.in{max-width:1180px;margin:0 auto}
+.ey{font-family:var(--mono);font-size:13px;letter-spacing:3px;font-weight:700;color:var(--cy);display:flex;align-items:center;gap:10px;margin-bottom:12px;text-transform:uppercase}
+.ey::before{content:"";width:32px;height:2px;background:currentColor}
+h2.big{font-size:clamp(30px,5vw,56px);line-height:1.15;font-weight:900;max-width:880px}
+.alt{background:var(--bg2)}
+.hero{min-height:min(100svh,860px);display:flex;align-items:center;padding-top:110px;overflow:hidden;position:relative}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 1px,transparent 1px 12.5%),repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 1px,transparent 1px 80px);pointer-events:none}
+.glow{position:absolute;width:min(70vw,720px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(25,240,255,.22),transparent 62%);top:-120px;inset-inline-end:-140px;pointer-events:none}
+.hero .in{position:relative;z-index:2;width:100%;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.kick{display:inline-flex;gap:10px;align-items:center;border-inline-start:3px solid var(--cy);padding:2px 14px;font-size:13px;color:var(--cy);margin-bottom:20px;font-family:var(--mono);letter-spacing:1.5px;text-transform:uppercase}
+.kick i{width:9px;height:9px;border-radius:50%;background:var(--cy);animation:pl 1.8s infinite}@keyframes pl{50%{opacity:.3}}
+h1{font-size:clamp(38px,6.6vw,88px);line-height:1.08;font-weight:900}
+html[lang=ar] h1{line-height:1.25}
+h1 em{font-style:normal;color:transparent;-webkit-text-stroke:2px var(--cy);text-shadow:0 0 40px rgba(25,240,255,.35)}
+.sub{max-width:560px;font-size:clamp(16px,1.8vw,19px);color:#b3bcc9;margin:24px 0 30px;border-inline-start:2px solid var(--cy);padding-inline-start:16px}
+.bts{display:flex;gap:12px;flex-wrap:wrap}
+.pv{position:relative;max-width:440px;width:100%;margin-inline:auto}
+.pv img{width:100%;height:auto;aspect-ratio:1;border-radius:28px;border:1px solid rgba(25,240,255,.4);box-shadow:0 0 70px rgba(25,240,255,.25),0 0 0 8px rgba(25,240,255,.05);background:#05060a;animation:fl 7s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-8px)}}
+.chip{position:absolute;inset-inline-start:-4%;bottom:-5%;background:var(--bg);border:1.5px solid var(--cy);border-radius:8px;padding:8px 14px;font-family:var(--mono);font-size:12px;color:var(--cy);letter-spacing:1px;direction:ltr}
+.ab{display:grid;grid-template-columns:1.3fr .7fr;gap:48px;margin-top:28px;align-items:start}
+.ab .st{font-size:clamp(20px,2.6vw,30px);line-height:1.5;font-weight:700}.ab mark{background:none;color:var(--cy)}
+.ab .sm{color:var(--mut);margin-top:16px;font-size:17px;max-width:640px}
+.fc{display:grid;gap:12px}.fc div{border:1.5px solid var(--ln);border-inline-start:3px solid var(--cy);border-radius:8px;padding:14px 18px;background:var(--card);display:flex;gap:16px;align-items:center}
+.fc b{font-family:var(--en);font-size:40px;line-height:1;color:transparent;-webkit-text-stroke:1.5px var(--cy);min-width:48px}.fc span{font-weight:600;line-height:1.4}
+.cs{display:grid;grid-template-columns:1.1fr .9fr;border:1.5px solid color-mix(in srgb,var(--c) 70%,#000);border-radius:16px;overflow:hidden;background:var(--card);margin-top:32px;box-shadow:0 0 50px color-mix(in srgb,var(--c) 14%,transparent)}
+.cs .shot{display:block;padding:24px;background:color-mix(in srgb,var(--c) 10%,#0a0d12);align-self:stretch;display:grid;align-content:center}
+.bar{display:flex;gap:6px;padding:8px 12px;background:#141922;border-radius:10px 10px 0 0;border:1.5px solid rgba(255,255,255,.2);border-bottom:0}.bar i{width:9px;height:9px;border-radius:50%;background:#ffffff44}
+.shot img{width:100%;height:auto;border:1.5px solid rgba(255,255,255,.2);border-radius:0 0 10px 10px;transition:transform .5s}.shot:hover img{transform:scale(1.02)}
+.cs .tx{padding:32px;display:flex;flex-direction:column;gap:10px}
+.no{color:var(--c);font-family:var(--mono);font-weight:700;font-size:13px;letter-spacing:2px}
+.cs h3{font-size:clamp(30px,4vw,46px);line-height:1.1;color:var(--c);letter-spacing:2px}
+.dm{align-self:flex-start;font-size:11px;font-weight:800;border:1.5px dashed var(--c);color:var(--c);border-radius:6px;padding:0 10px;font-family:var(--mono);letter-spacing:1px}
+dl{margin-top:6px}dt{font-family:var(--mono);font-size:12px;letter-spacing:2px;color:var(--c);text-transform:uppercase;margin-top:10px}dd{color:#c8d0db;font-size:16px}
+.tg{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.tg span{border:1px solid rgba(255,255,255,.28);border-radius:6px;padding:0 10px;font-size:12px;font-weight:700;font-family:var(--mono);color:#dfe6ee}
+.bt{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.cs .btn{background:var(--c);border-color:var(--c);box-shadow:none;padding:10px 20px;font-size:15px}.cs .btn.ol{background:transparent;color:var(--tx);border-color:rgba(255,255,255,.4)}
+.more{margin-top:28px;color:var(--mut);font-size:16px}.more a{color:var(--cy);border-bottom:1px solid currentColor;margin-inline-end:10px}
+.sk{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.sk span{border:1.5px solid var(--cy);border-radius:8px;padding:8px 20px;font-weight:700;background:var(--card);color:var(--cy);font-family:var(--mono);transition:.2s}.sk span:hover{background:var(--cy);color:var(--bg);transform:translateY(-3px)}
+.nt{color:var(--mut);font-size:15px;margin-top:20px;max-width:640px}
+.ct h2{font-size:clamp(40px,8vw,104px);line-height:1.05}.ct h2 em{font-style:normal;color:transparent;-webkit-text-stroke:2px var(--cy)}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:36px;align-items:start}
+.cg p.lead{margin-bottom:22px;color:#b3bcc9;font-size:19px;max-width:460px}
+.links{display:grid;gap:12px}
+.links a{display:flex;align-items:center;gap:16px;border:1.5px solid var(--ln);border-radius:12px;padding:16px 20px;background:var(--card);transition:.2s}
+.links a:hover{border-color:var(--cy);transform:translateY(-2px);box-shadow:0 0 30px rgba(25,240,255,.15)}
+.links small{display:block;color:var(--mut);font-family:var(--mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase}
+.links strong{direction:ltr;unicode-bidi:plaintext;font-weight:700;word-break:break-all}
+.links svg{flex:none;width:26px;height:26px;color:var(--cy)}
+form.fm{background:var(--card);border:1.5px solid var(--cy);border-radius:14px;padding:26px;box-shadow:0 0 50px rgba(25,240,255,.14)}
+.fm h3{font-size:22px;margin-bottom:6px}.fm label{display:block;font-size:14px;font-weight:700;margin:12px 0 4px;color:var(--mut)}
+.fm input:not(.hp):not([type=hidden]),.fm textarea{width:100%;padding:12px 14px;border:1.5px solid var(--ln);border-radius:8px;font:inherit;font-size:16px;background:#05060a;color:var(--tx)}
+.fm textarea{resize:vertical;min-height:120px}.fm [aria-invalid=true]{border-color:#ff8a80}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;width:0}
+.er{color:#ff8a80;font-size:13px;min-height:18px}.fm .btn{width:100%;margin-top:12px}.fm .btn:disabled{opacity:.6;cursor:wait}
+.res{margin-top:10px;font-size:15px;min-height:22px}.res.ok{color:#6fe8a0}.res.bad{color:#ff8a80}
+footer{background:#030405;color:#7d8795;font-family:var(--mono);padding:26px 5vw;font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}.rv.on{opacity:1;transform:none}
+#pg{position:fixed;top:0;inset-inline:0;height:3px;z-index:90}#pg i{display:block;height:100%;width:0;background:var(--cy)}
+@media(max-width:900px){.hero .in,.ab,.cg,.cs{grid-template-columns:1fr}.pv{max-width:340px;margin-bottom:30px}
+.lk{display:none;position:absolute;top:100%;inset-inline:0;background:#05060a;flex-direction:column;padding:10px 5vw 18px;margin:0;border-bottom:1px solid var(--ln)}.lk.on{display:flex}
+.bur{display:inline-block;margin-inline-start:auto}.lk+.pill{margin-inline-start:0}nav.top .btn.sm{display:none}section{padding:72px 5vw}.cs .tx{padding:24px}.cs .shot{padding:16px}}
+html.intro{overflow:hidden}#intro{display:none}html.intro #intro{display:flex;font-family:var(--en);direction:ltr;position:fixed;inset:0;z-index:10000;background:radial-gradient(60% 50% at 50% 45%,rgba(122,92,255,.28),transparent 70%),radial-gradient(40% 35% at 70% 60%,rgba(25,240,255,.16),transparent 70%),var(--bg);flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;cursor:pointer;transition:opacity .8s ease,transform .8s ease,visibility .8s}#intro.out{opacity:0;transform:scale(1.04);visibility:hidden;pointer-events:none}
+#intro::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.04) 0 1px,transparent 1px 12.5%),repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 1px,transparent 1px 80px);-webkit-mask-image:radial-gradient(circle at 50% 50%,#000 0,transparent 70%);mask-image:radial-gradient(circle at 50% 50%,#000 0,transparent 70%)}
+#intro .nm{position:relative;font-size:clamp(44px,11vw,128px);font-weight:900;line-height:1.1;letter-spacing:-.02em;display:flex;gap:.28em;flex-wrap:wrap;justify-content:center}
+#intro .nm i{font-style:normal;display:inline-block;opacity:0;filter:blur(14px);transform:translateY(26px);animation:iu 1s cubic-bezier(.2,.8,.2,1) forwards}#intro .nm i:nth-child(2){animation-delay:.25s;color:var(--cy)}
+#intro .tl{position:relative;margin-top:18px;font-family:var(--mono);font-size:clamp(12px,3.2vw,18px);letter-spacing:.2em;text-transform:uppercase;color:var(--mut);opacity:0;animation:iu2 .9s ease 1.1s forwards}
+#intro .bar{position:absolute;bottom:0;inset-inline:0;height:3px;background:rgba(255,255,255,.08)}#intro .bar i{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--vi),var(--cy));transform-origin:left;transform:scaleX(0);animation:ib 4.5s linear forwards}
+#intro .ds{direction:ltr;unicode-bidi:isolate;font-family:var(--en);position:relative;margin-top:22px;max-width:680px;font-size:clamp(16px,4.2vw,22px);font-weight:600;line-height:1.5;color:#dfe6ee;opacity:0;transform:translateY(10px);animation:iu3 .9s ease 1.7s forwards}#intro .hint{position:absolute;bottom:26px;font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#5f6b7a;opacity:0;animation:iu2 .8s ease 2s forwards}
+@keyframes iu{to{opacity:1;filter:blur(0);transform:none}}@keyframes iu3{to{opacity:1;transform:none}}@keyframes iu2{to{opacity:1}}@keyframes ib{to{transform:scaleX(1)}}
+.pgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:24px;margin-top:40px}
+.pc{grid-column:span 2;display:flex;flex-direction:column;border:1.5px solid color-mix(in srgb,var(--c) 55%,#000);border-radius:16px;overflow:hidden;background:var(--card);transition:transform .3s,box-shadow .3s,border-color .3s}.pc:nth-child(n+4){grid-column:span 3}
+.pc:hover{transform:translateY(-6px);box-shadow:0 18px 50px color-mix(in srgb,var(--c) 22%,transparent);border-color:var(--c)}
+.pshot{display:block;padding:18px 18px 0;background:color-mix(in srgb,var(--c) 10%,#0a0d12)}.pshot img{width:100%;height:auto;aspect-ratio:700/438;object-fit:cover;object-position:top;border:1.5px solid rgba(255,255,255,.2);border-bottom:0;border-radius:0;display:block;transition:transform .5s}.pc:hover .pshot img{transform:scale(1.02)}
+.ptx{padding:22px 24px 26px;display:flex;flex-direction:column;gap:10px;flex:1}.pm{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.pc h3{font-size:clamp(24px,2.4vw,32px);line-height:1.15;color:var(--c);letter-spacing:1.5px}html[lang=ar] .pc h3{letter-spacing:0}
+.pp{color:#c8d0db;font-size:15.5px}.pb{color:var(--mut);font-size:15px}.pc .tg{margin-top:auto;padding-top:6px}.pc .bt{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.pc .btn{background:var(--c);border-color:var(--c);box-shadow:none;padding:10px 20px;font-size:15px;min-height:44px}.pc .btn.ol{background:transparent;color:var(--tx);border-color:rgba(255,255,255,.4)}
+.skg{margin-top:38px}.skt{font-family:var(--mono);font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--cy);font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:12px}html[lang=ar] .skt{letter-spacing:.04em;font-family:var(--ar);font-size:16px;text-transform:none}.skt::after{content:"";flex:1;height:1px;background:var(--ln)}
+.skr{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}.skc{border:1.5px solid var(--ln);border-radius:14px;background:var(--card);padding:20px 22px;display:flex;flex-direction:column;gap:14px;transition:transform .25s,border-color .25s}.skc:hover{transform:translateY(-4px);border-color:var(--cy)}
+.skh{display:flex;align-items:center;gap:12px}.skh b{display:grid;place-items:center;min-width:46px;height:46px;padding:0 8px;border-radius:10px;border:1.5px solid var(--cy);color:var(--cy);font-family:var(--mono);font-size:14px;direction:ltr}.skh h4{font-size:19px;line-height:1.2}
+.skc p{color:#c8d0db;font-size:15.5px}.lv{margin-top:auto;align-self:flex-start;font-size:12px;font-weight:700;font-family:var(--mono);letter-spacing:.5px;border:1px dashed rgba(25,240,255,.55);color:var(--cy);border-radius:6px;padding:2px 10px}html[lang=ar] .lv{font-family:var(--ar);letter-spacing:0}
+section+section::before{content:"";position:absolute;top:0;inset-inline:5vw;height:1px;background:linear-gradient(90deg,transparent,rgba(25,240,255,.35),transparent)}
+@media(max-width:1000px){.pgrid{grid-template-columns:repeat(2,1fr)}.pc,.pc:nth-child(n+4){grid-column:auto}.pc:last-child{grid-column:1/-1}}
+@media(max-width:640px){.pgrid{grid-template-columns:1fr;gap:20px}.pc:last-child{grid-column:auto}.pc .bt .btn{flex:1;justify-content:center}.skr{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.pc:hover,.skc:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){#intro{display:none!important}html.intro{overflow:auto}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="intro" aria-hidden="true" lang="en" dir="ltr"><div class="nm"><i>Kareem</i><i>Sakr</i></div><div class="tl">Web Developer · Student</div><div class="ds" lang="en" dir="ltr">Crafting Digital Experiences That Leave a Lasting Impression.</div><div class="hint">Tap to skip</div><div class="bar"><i></i></div></div>
+<a class="skip" href="#main"><span class="ar" lang="ar">تخطَّ إلى المحتوى</span><span class="en" lang="en">Skip to content</span></a>
+<div id="pg" aria-hidden="true"><i></i></div>
+<nav class="top" id="top" aria-label="Main">
+<a class="lg" href="#home"><b>K</b><span><span class="ar" lang="ar">كريم صقر</span><span class="en" lang="en">Kareem Sakr</span></span></a>
+<div class="lk" id="lk"><a href="#about"><span class="ar" lang="ar">نبذة</span><span class="en" lang="en">About</span></a><a href="#projects"><span class="ar" lang="ar">المشاريع</span><span class="en" lang="en">Projects</span></a><a href="#skills"><span class="ar" lang="ar">المهارات</span><span class="en" lang="en">Skills</span></a><a href="#contact"><span class="ar" lang="ar">تواصل</span><span class="en" lang="en">Contact</span></a></div>
+<button class="pill" id="lb" type="button" aria-label="Switch language / تغيير اللغة"><span class="en" lang="ar">عربي</span><span class="ar" lang="en">EN</span></button>
+<a class="btn sm" href="#contact"><span class="ar" lang="ar">تواصل معايا</span><span class="en" lang="en">Get in touch</span></a>
+<button class="pill bur" id="bg" type="button" aria-expanded="false" aria-controls="lk" aria-label="Menu">&#9776;</button>
+</nav>
+<main id="main">
+<header class="hero" id="home"><div class="glow" aria-hidden="true"></div>
+<div class="in"><div><div class="kick"><i></i><span><span class="ar" lang="ar">طالب هندسة · مطوّر ويب</span><span class="en" lang="en">Engineering student · Web developer</span></span></div>
+<h1><span class="ar" lang="ar">بصمّم وببني <em>مواقع</em> بالعربي والإنجليزي.</span><span class="en" lang="en">I build <em>bilingual</em> websites that work on any screen.</span></h1>
+<p class="sub"><span class="ar" lang="ar">أنا كريم صقر، طالب هندسة في مصر. بتعلّم تطوير الويب وببني مشاريع تجريبية بـHTML وCSS وJavaScript، بدعم كامل للعربية من اليمين لليسار وللإنجليزية.</span><span class="en" lang="en">I am Kareem Sakr, an engineering student in Egypt. I am learning web development and building concept projects with HTML, CSS and JavaScript, with full Arabic (RTL) and English support.</span></p>
+<div class="bts"><a class="btn" href="#projects"><span class="ar" lang="ar">شوف المشاريع</span><span class="en" lang="en">View projects</span></a><a class="btn ol" href="#contact"><span class="ar" lang="ar">تواصل معايا</span><span class="en" lang="en">Contact me</span></a></div></div>
+<div class="pv"><img src="assets/portrait.webp" width="500" height="500" fetchpriority="high" alt="Stylized neon-line portrait of Kareem Sakr"><div class="chip" aria-hidden="true">// concept projects · student</div></div></div>
+</header>
+
+<section id="about" class="alt"><div class="in"><div class="ey rv"><span class="ar" lang="ar">نبذة</span><span class="en" lang="en">About</span></div>
+<div class="ab"><div class="rv"><p class="st"><span class="ar" lang="ar">أنا <mark>طالب</mark> بتعلم الويب وببني <mark>مشاريع تجريبية</mark> بتوري اللي أقدر أعمله. مش هحكيلك عن خبرة مش عندي.</span><span class="en" lang="en">I am a <mark>student</mark> learning the web and building <mark>concept projects</mark> that show what I can do. I will not claim experience I do not have.</span></p>
+<p class="sm"><span class="ar" lang="ar">بحب المواقع البسيطة والواضحة، بتفتح بسرعة على الموبايل، وبتتعامل مع العربي والإنجليزي من غير ما التصميم يتكسر. شغلي لحد دلوقتي كله مشاريع تجريبية، وبدوّر على أول مشاريع حقيقية.</span><span class="en" lang="en">I like simple, clear sites that load fast on a phone and handle Arabic and English without breaking the layout. All my work so far is concept projects, and I am looking for my first real ones.</span></p></div>
+<div class="fc rv"><div><b>5</b><span><span class="ar" lang="ar">مشاريع تجريبية بتشتغل أونلاين</span><span class="en" lang="en">concept projects live online</span></span></div><div><b>2</b><span><span class="ar" lang="ar">لغتين: عربي RTL وإنجليزي LTR</span><span class="en" lang="en">languages: Arabic RTL and English LTR</span></span></div><div><b>1</b><span><span class="ar" lang="ar">هدف: أول مشروع حقيقي</span><span class="en" lang="en">goal: my first real project</span></span></div></div></div></div></section>
+
+<section id="projects"><div class="in"><div class="ey rv"><span class="ar" lang="ar">المشاريع</span><span class="en" lang="en">Projects</span></div><h2 class="big rv"><span class="ar" lang="ar">خمس مشاريع تجريبية</span><span class="en" lang="en">Five concept projects</span></h2>
+<p class="nt rv"><span class="ar" lang="ar">دي مشاريع تجريبية لأنشطة افتراضية، مش عملاء حقيقيين. الأسماء والأسعار فيها مؤقتة. افتحها وجرّبها بنفسك.</span><span class="en" lang="en">These are concept projects for imaginary businesses, not real clients. Names and prices in them are placeholders. Open them and try them yourself.</span></p>
+<div class="pgrid"><article class="pc rv" style="--c:#d9ff5a"><a class="pshot" href="https://kareemsakroo67-ship-it.github.io/nabd/" target="_blank" rel="noopener" aria-label="NABD"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="assets/nabd.jpg" width="700" height="438" alt="NABD concept project screenshot"></a>
+<div class="ptx"><div class="pm"><span class="no">01 / <span class="ar" lang="ar">موقع نادي رياضي</span><span class="en" lang="en">Gym website</span></span><span class="dm"><span class="ar" lang="ar">مشروع تجريبي</span><span class="en" lang="en">Concept</span></span></div><h3>NABD</h3>
+<p class="pp"><span class="ar" lang="ar">نادي رياضي محتاج الناس تشوف الباقات والمواعيد بسرعة وتسجّل من غير اتصال.</span><span class="en" lang="en">A gym needs people to see plans and times fast, then sign up without calling.</span></p><p class="pb"><span class="ar" lang="ar">جدول حصص بتبويبات، باقات اشتراك، حاسبة كتلة الجسم، وتسجيل حصة تجريبية بيفتح رسالة واتساب جاهزة.</span><span class="en" lang="en">Tabbed class schedule, membership plans, a BMI calculator and a trial-class sign-up that opens a ready WhatsApp message.</span></p>
+<div class="tg"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>RTL</span></div>
+<div class="bt"><a class="btn" href="https://kareemsakroo67-ship-it.github.io/nabd/" target="_blank" rel="noopener"><span class="ar" lang="ar">افتح النموذج</span><span class="en" lang="en">Live demo</span> <b aria-hidden="true">&#8599;</b></a><a class="btn ol" href="https://github.com/kareemsakroo67-ship-it" target="_blank" rel="noopener">GitHub</a></div></div></article>
+<article class="pc rv" style="--c:#f4d9b8"><a class="pshot" href="https://kareemsakroo67-ship-it.github.io/zaytoun/" target="_blank" rel="noopener" aria-label="ZAYTOON"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="assets/zaytoun.jpg" width="700" height="438" alt="ZAYTOON concept project screenshot"></a>
+<div class="ptx"><div class="pm"><span class="no">02 / <span class="ar" lang="ar">موقع مطعم</span><span class="en" lang="en">Restaurant website</span></span><span class="dm"><span class="ar" lang="ar">مشروع تجريبي</span><span class="en" lang="en">Concept</span></span></div><h3>ZAYTOON</h3>
+<p class="pp"><span class="ar" lang="ar">مطعم أكل بيتي محتاج منيو واضح على الموبايل وطريقة سهلة لحجز طاولة.</span><span class="en" lang="en">A home-style restaurant needs a menu that reads well on a phone and an easy way to book a table.</span></p><p class="pb"><span class="ar" lang="ar">منيو بتبويبات، طبق اليوم، ونموذج حجز طاولة بيبعت التفاصيل على واتساب.</span><span class="en" lang="en">Tabbed menu, dish of the day and a table booking form that sends the details to WhatsApp.</span></p>
+<div class="tg"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>RTL</span></div>
+<div class="bt"><a class="btn" href="https://kareemsakroo67-ship-it.github.io/zaytoun/" target="_blank" rel="noopener"><span class="ar" lang="ar">افتح النموذج</span><span class="en" lang="en">Live demo</span> <b aria-hidden="true">&#8599;</b></a><a class="btn ol" href="https://github.com/kareemsakroo67-ship-it" target="_blank" rel="noopener">GitHub</a></div></div></article>
+<article class="pc rv" style="--c:#bfe9ee"><a class="pshot" href="https://kareemsakroo67-ship-it.github.io/salama/" target="_blank" rel="noopener" aria-label="SALAMA"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="assets/salama.jpg" width="700" height="438" alt="SALAMA concept project screenshot"></a>
+<div class="ptx"><div class="pm"><span class="no">03 / <span class="ar" lang="ar">موقع عيادة</span><span class="en" lang="en">Clinic website</span></span><span class="dm"><span class="ar" lang="ar">مشروع تجريبي</span><span class="en" lang="en">Concept</span></span></div><h3>SALAMA</h3>
+<p class="pp"><span class="ar" lang="ar">موقع العيادة لازم يبان هادي ويجاوب الأسئلة المتكررة قبل ما المريض يتصل.</span><span class="en" lang="en">A clinic site has to feel calm and answer the common questions before a patient calls.</span></p><p class="pb"><span class="ar" lang="ar">التخصصات والأطباء وإزاي بتتم الزيارة وأسئلة شائعة وطلب حجز سريع عبر واتساب.</span><span class="en" lang="en">Specialties, doctors, how a visit works, an FAQ and a quick appointment request through WhatsApp.</span></p>
+<div class="tg"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>RTL</span></div>
+<div class="bt"><a class="btn" href="https://kareemsakroo67-ship-it.github.io/salama/" target="_blank" rel="noopener"><span class="ar" lang="ar">افتح النموذج</span><span class="en" lang="en">Live demo</span> <b aria-hidden="true">&#8599;</b></a><a class="btn ol" href="https://github.com/kareemsakroo67-ship-it" target="_blank" rel="noopener">GitHub</a></div></div></article>
+<article class="pc rv" style="--c:#f4a9bc"><a class="pshot" href="https://kareemsakroo67-ship-it.github.io/halawa/" target="_blank" rel="noopener" aria-label="HALAWA BAYTNA"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="assets/halawa.jpg" width="700" height="438" alt="HALAWA BAYTNA concept project screenshot"></a>
+<div class="ptx"><div class="pm"><span class="no">04 / <span class="ar" lang="ar">موقع محل حلويات</span><span class="en" lang="en">Sweets shop website</span></span><span class="dm"><span class="ar" lang="ar">مشروع تجريبي</span><span class="en" lang="en">Concept</span></span></div><h3>HALAWA BAYTNA</h3>
+<p class="pp"><span class="ar" lang="ar">محل حلويات بيتي محتاج منيو الناس تتصفحه وطريقة بسيطة للطلب.</span><span class="en" lang="en">A home bakery needs a menu people can browse and a simple way to order.</span></p><p class="pb"><span class="ar" lang="ar">منيو منتجات بفلتر، وسلة، وطلب بيفتح رسالة واتساب جاهزة.</span><span class="en" lang="en">Product menu with filters, a cart and ordering that opens a ready WhatsApp message.</span></p>
+<div class="tg"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>RTL</span></div>
+<div class="bt"><a class="btn" href="https://kareemsakroo67-ship-it.github.io/halawa/" target="_blank" rel="noopener"><span class="ar" lang="ar">افتح النموذج</span><span class="en" lang="en">Live demo</span> <b aria-hidden="true">&#8599;</b></a><a class="btn ol" href="https://github.com/kareemsakroo67-ship-it" target="_blank" rel="noopener">GitHub</a></div></div></article>
+<article class="pc rv" style="--c:#8fa2ff"><a class="pshot" href="https://kareemsakroo67-ship-it.github.io/store/" target="_blank" rel="noopener" aria-label="VOLT"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="assets/store.jpg" width="700" height="438" alt="VOLT concept project screenshot"></a>
+<div class="ptx"><div class="pm"><span class="no">05 / <span class="ar" lang="ar">موقع متجر إلكترونيات</span><span class="en" lang="en">Electronics store website</span></span><span class="dm"><span class="ar" lang="ar">مشروع تجريبي</span><span class="en" lang="en">Concept</span></span></div><h3>VOLT</h3>
+<p class="pp"><span class="ar" lang="ar">متجر إلكتروني محتاج فلاتر واضحة وسلة وخطوات دفع مطمئنة.</span><span class="en" lang="en">An online store needs clear filters, a cart and checkout steps that feel trustworthy.</span></p><p class="pb"><span class="ar" lang="ar">فلاتر وترتيب للمنتجات، سلة، دفع تجريبي ولوحة طلبات. من غير دفع حقيقي.</span><span class="en" lang="en">Product filters and sorting, a cart, a simulated checkout and an order dashboard. No real payments.</span></p>
+<div class="tg"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>RTL</span></div>
+<div class="bt"><a class="btn" href="https://kareemsakroo67-ship-it.github.io/store/" target="_blank" rel="noopener"><span class="ar" lang="ar">افتح النموذج</span><span class="en" lang="en">Live demo</span> <b aria-hidden="true">&#8599;</b></a><a class="btn ol" href="https://github.com/kareemsakroo67-ship-it" target="_blank" rel="noopener">GitHub</a></div></div></article></div>
+</div></section>
+
+<section id="skills" class="alt"><div class="in"><div class="ey rv"><span class="ar" lang="ar">المهارات</span><span class="en" lang="en">Skills</span></div><h2 class="big rv"><span class="ar" lang="ar">اللي بشتغل بيه</span><span class="en" lang="en">What I work with</span></h2>
+<div class="skg"><h3 class="skt rv"><span class="ar" lang="ar">البناء</span><span class="en" lang="en">Build</span></h3><div class="skr"><div class="skc rv"><div class="skh"><b aria-hidden="true">&lt;/&gt;</b><h4>HTML</h4></div><p><span class="ar" lang="ar">هيكل الصفحة والفورمات والعناوين وبيانات السيو زي العنوان والوصف ومعاينة المشاركة.</span><span class="en" lang="en">Page structure, forms, headings and SEO tags such as titles, descriptions and social previews.</span></p><span class="lv"><span class="ar" lang="ar">بتعلّم · مستخدم في 5 من 5 مشاريع</span><span class="en" lang="en">Learning · used in 5 of 5 projects</span></span></div><div class="skc rv"><div class="skh"><b aria-hidden="true">{ }</b><h4>CSS</h4></div><p><span class="ar" lang="ar">تصميم بالـ grid والـ flexbox، ثيمات غامقة وفاتحة، وحركة وتأثيرات.</span><span class="en" lang="en">Layouts with grid and flexbox, dark and light themes, animation and hover effects.</span></p><span class="lv"><span class="ar" lang="ar">بتعلّم · مستخدم في 5 من 5 مشاريع</span><span class="en" lang="en">Learning · used in 5 of 5 projects</span></span></div><div class="skc rv"><div class="skh"><b aria-hidden="true">JS</b><h4>JavaScript</h4></div><p><span class="ar" lang="ar">تبويبات، حاسبة كتلة الجسم، سلة مشتريات، فحص الفورمات ورسائل واتساب جاهزة.</span><span class="en" lang="en">Tabs, a BMI calculator, a shopping cart, form validation and ready WhatsApp messages.</span></p><span class="lv"><span class="ar" lang="ar">بتعلّم · مستخدم في 5 من 5 مشاريع</span><span class="en" lang="en">Learning · used in 5 of 5 projects</span></span></div></div></div><div class="skg"><h3 class="skt rv"><span class="ar" lang="ar">التصميم</span><span class="en" lang="en">Layout</span></h3><div class="skr"><div class="skc rv"><div class="skh"><b aria-hidden="true">[ ]</b><h4>Responsive design</h4></div><p><span class="ar" lang="ar">صفحات بتناسب الموبايل والتابلت والكمبيوتر. بجرّبها على عرض 390 و1280.</span><span class="en" lang="en">Pages that fit phones, tablets and desktops. I check them at 390px and 1280px wide.</span></p><span class="lv"><span class="ar" lang="ar">بتعلّم · مستخدم في 5 من 5 مشاريع</span><span class="en" lang="en">Learning · used in 5 of 5 projects</span></span></div><div class="skc rv"><div class="skh"><b aria-hidden="true">RTL</b><h4>RTL / Arabic layouts</h4></div><p><span class="ar" lang="ar">صفحات عربي بتتقرا من اليمين للشمال، وزرار لغة بيقلب التصميم كله.</span><span class="en" lang="en">Arabic pages that read right to left, plus a language toggle that flips the whole layout.</span></p><span class="lv"><span class="ar" lang="ar">بتعلّم · مستخدم في 5 من 5 مشاريع</span><span class="en" lang="en">Learning · used in 5 of 5 projects</span></span></div></div></div><div class="skg"><h3 class="skt rv"><span class="ar" lang="ar">الشغل</span><span class="en" lang="en">Workflow</span></h3><div class="skr"><div class="skc rv"><div class="skh"><b aria-hidden="true">Git</b><h4>Git &amp; GitHub</h4></div><p><span class="ar" lang="ar">سجل تعديلات، ومجلد لكل مشروع في نفس الريبو.</span><span class="en" lang="en">Version history, and one folder per project in the same repository.</span></p><span class="lv"><span class="ar" lang="ar">بتعلّم · مستخدم في 5 من 5 مشاريع</span><span class="en" lang="en">Learning · used in 5 of 5 projects</span></span></div><div class="skc rv"><div class="skh"><b aria-hidden="true">WWW</b><h4>GitHub Pages</h4></div><p><span class="ar" lang="ar">نشر البورتفوليو والخمس نماذج كمواقع شغالة ببلاش.</span><span class="en" lang="en">Publishing the portfolio and all five demos as free live websites.</span></p><span class="lv"><span class="ar" lang="ar">بتعلّم · مستخدم في 5 من 5 مشاريع</span><span class="en" lang="en">Learning · used in 5 of 5 projects</span></span></div></div></div><p class="nt rv"><span class="ar" lang="ar">أنا طالب لسه بتعلّم. دي الأدوات اللي استخدمتها فعلًا في المشاريع التجريبية اللي فوق، ومفيش نسب أو مستويات مبالغ فيها.</span><span class="en" lang="en">I am a student and still learning. These are the tools I actually used in the concept projects above. No inflated levels or percentages.</span></p></div></section>
+
+<section class="ct" id="contact"><div class="in"><div class="ey"><span class="ar" lang="ar">تواصل</span><span class="en" lang="en">Contact</span></div><h2 class="big"><span class="ar" lang="ar">خلّينا</span><span class="en" lang="en">Let's</span> <em><span class="ar" lang="ar">نتكلم.</span><span class="en" lang="en">talk.</span></em></h2>
+<div class="cg"><div><p class="lead"><span class="ar" lang="ar">لو عندك فرصة أو مشروع أو عايز تشوف شغلي أكتر، كلمني. أسرع طريقة واتساب.</span><span class="en" lang="en">If you have an opportunity or a project, or want to see more of my work, get in touch. WhatsApp is the fastest way.</span></p>
+<div class="links">
+<a href="https://wa.me/201143586945" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-1 1.2-.2.2-.4.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 00-8.6 15L2 22l5.1-1.3A10 10 0 1012 2z"/></svg><span><small>WhatsApp</small><strong>+20 114 358 6945</strong></span></a>
+<a href="mailto:Kareemsakroo67@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span><small><span class="ar" lang="ar">البريد</span><span class="en" lang="en">Email</span></small><strong>Kareemsakroo67@gmail.com</strong></span></a>
+<a href="https://www.linkedin.com/in/kareem-sakr-ba9810452" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.01 5 2.5 2.5 0 01.01-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-4.9c0-1.2 0-2.7-1.7-2.7s-1.9 1.3-1.9 2.6V21h-4z"/></svg><span><small>LinkedIn</small><strong>kareem-sakr</strong></span></a>
+<a href="https://github.com/kareemsakroo67-ship-it" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 00-3.64 22.41c.58.1.79-.25.79-.56v-2.14c-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 015.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0012 .5z"/></svg><span><small>GitHub</small><strong>kareemsakroo67-ship-it</strong></span></a>
+</div></div>
+<form class="fm rv" id="fm" novalidate action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="26a6d921-6094-407e-b2bb-438684d2ca59"><input type="hidden" name="subject" value="New message from kareemsakroo67-ship-it.github.io"><input type="hidden" name="from_name" value="Portfolio contact form">
+<input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<h3><span class="ar" lang="ar">ابعتلي رسالة</span><span class="en" lang="en">Send me a message</span></h3>
+<label for="nm"><span class="ar" lang="ar">الاسم</span><span class="en" lang="en">Name</span></label><input id="nm" name="name" type="text" autocomplete="name" required><div class="er" id="e1" role="alert"></div>
+<label for="em"><span class="ar" lang="ar">البريد الإلكتروني</span><span class="en" lang="en">Email</span></label><input id="em" name="email" type="email" autocomplete="email" inputmode="email" required><div class="er" id="e2" role="alert"></div>
+<label for="ms"><span class="ar" lang="ar">رسالتك</span><span class="en" lang="en">Message</span></label><textarea id="ms" name="message" rows="5" required></textarea><div class="er" id="e3" role="alert"></div>
+<button class="btn" id="sb" type="submit"><span class="ar" lang="ar">ابعت الرسالة</span><span class="en" lang="en">Send message</span></button>
+<p class="res" id="res" role="status" aria-live="polite"></p>
+</form></div></div></section>
+</main>
+<footer><span><span class="ar" lang="ar">© 2026 كريم صقر</span><span class="en" lang="en">© 2026 Kareem Sakr</span></span><span><span class="ar" lang="ar">مشاريع تجريبية · طالب · مصر</span><span class="en" lang="en">Concept projects · Student · Egypt</span></span></footer>
+<script>
+(function(){var d=document.documentElement,it=document.getElementById("intro");if(!it||!d.classList.contains("intro"))return;var done=false;function end(){if(done)return;done=true;it.classList.add("out");setTimeout(function(){d.classList.remove("intro");it.style.display="none"},850)}it.addEventListener("click",end);document.addEventListener("keydown",function(e){if(e.key==="Escape"||e.key==="Enter"||e.key===" ")end()});setTimeout(end,4500)})();
+(function(){"use strict";
+var d=document.documentElement,$=function(s){return document.querySelector(s)};
+function setLang(l){d.lang=l;d.dir=l==="ar"?"rtl":"ltr";document.title=l==="ar"?"كريم صقر | مطوّر ويب":"Kareem Sakr | Web Developer Portfolio";try{localStorage.setItem("ks_lang",l)}catch(e){}}
+var l="en";try{l=localStorage.getItem("ks_lang")||"en"}catch(e){}if(/[?&]lang=ar/.test(location.search))l="ar";if(/[?&]lang=en/.test(location.search))l="en";setLang(l);
+$("#lb").addEventListener("click",function(){setLang(d.lang==="ar"?"en":"ar")});
+$("#bg").addEventListener("click",function(e){var o=$("#lk").classList.toggle("on");e.currentTarget.setAttribute("aria-expanded",o)});
+$("#lk").addEventListener("click",function(e){if(e.target.tagName==="A"){$("#lk").classList.remove("on");$("#bg").setAttribute("aria-expanded","false")}});
+
+var fm=$("#fm");if(fm){fm.addEventListener("submit",function(e){e.preventDefault();var ar=d.lang==="ar",res=$("#res"),sb=$("#sb");
+var f={nm:$("#nm"),em:$("#em"),ms:$("#ms")},ok=true,first=null;
+function chk(el,eid,good,m){var bad=!good;el.setAttribute("aria-invalid",bad);$(eid).textContent=bad?m:"";if(bad){ok=false;if(!first)first=el}}
+chk(f.nm,"#e1",f.nm.value.trim().length>=2,ar?"اكتب اسمك":"Please enter your name");
+chk(f.em,"#e2",/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(f.em.value.trim()),ar?"اكتب بريد إلكتروني صحيح":"Please enter a valid email");
+chk(f.ms,"#e3",f.ms.value.trim().length>=10,ar?"الرسالة قصيرة (10 حروف على الأقل)":"Message is too short (10+ characters)");
+res.className="res";res.textContent="";if(!ok){first.focus();return}
+sb.disabled=true;res.textContent=ar?"جاري الإرسال...":"Sending...";
+fetch(fm.action,{method:"POST",headers:{"Accept":"application/json"},body:new FormData(fm)}).then(function(r){return r.json()}).then(function(j){
+ if(j&&j.success){res.className="res ok";res.textContent=ar?"وصلتني رسالتك. هرد عليك قريب.":"Message sent. I will get back to you soon.";fm.reset()}
+ else throw new Error("x")}).catch(function(){res.className="res bad";res.textContent=ar?"حصلت مشكلة. جرّب واتساب أو الإيميل اللي فوق.":"Something went wrong. Please use WhatsApp or the email above."}).then(function(){sb.disabled=false})})}
+var nav=$("#top"),pg=$("#pg i"),tk=false;
+function onS(){var y=scrollY,h=d.scrollHeight-innerHeight;nav.classList.toggle("sc",y>30);pg.style.width=(h>0?y/h*100:0)+"%";tk=false}
+addEventListener("scroll",function(){if(!tk){tk=true;requestAnimationFrame(onS)}},{passive:true});onS();
+var rs=[].slice.call(document.querySelectorAll(".rv"));
+if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches||/static/.test(location.search)){rs.forEach(function(r){r.classList.add("on")})}
+else{var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add("on");io.unobserve(en.target)}})},{threshold:.1});rs.forEach(function(r){io.observe(r)})}
 })();
-</script></body></html>
+</script>
+</body></html>
