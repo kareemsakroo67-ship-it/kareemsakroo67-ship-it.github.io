@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>زيتون | Zaytoun Kitchen</title><meta name="description" content="زيتون: نموذج تجريبي لموقع مطعم مصري، منيو وحجز طاولة على واتساب."><meta name="theme-color" content="#1b281d"><style>
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}html,body{overflow-x:clip}
+.zy{--g:#1b281d;--g2:#243728;--g3:#2f4a35;--iv:#f6efe1;--iv2:#ece2cc;--cp:#b4602f;--cp2:#d98a54;--gl:#c9a35c;--ink:#22281f;--mt:#7a7461;background:var(--iv);color:var(--ink);font-family:"Amiri","Noto Naskh Arabic","Scheherazade New","Cairo","Tajawal","Segoe UI",serif;font-size:19px;line-height:1.8;min-height:100vh}
+.zy a{color:inherit;text-decoration:none}.zy button,.zy input,.zy select{font-family:inherit}
+.zy ::selection{background:var(--cp);color:#fff}
+.zy .demo{background:var(--g);color:var(--gl);text-align:center;font-size:14px;padding:5px 12px;letter-spacing:.5px;border-bottom:1px solid rgba(201,163,92,.3)}
+.zy .hd{position:absolute;inset-inline:0;top:34px;z-index:10;display:flex;align-items:center;gap:26px;padding:20px 5vw}
+.zy .hd.fx{position:fixed;top:0;background:rgba(27,40,29,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:12px 5vw;border-bottom:1px solid rgba(201,163,92,.25)}
+.zy .lg{display:flex;flex-direction:column;line-height:1;margin-inline-end:auto;color:var(--iv)}.zy .lg b{font-size:36px;font-weight:700}.zy .lg small{font-family:Georgia,serif;font-size:10px;letter-spacing:5px;color:var(--gl);margin-top:6px;direction:ltr;text-align:right}
+.zy .lk{display:flex;gap:28px}.zy .lk a{color:#e7dcc3;font-size:18px;position:relative}.zy .lk a::after{content:"";position:absolute;inset-inline:0;bottom:-2px;height:1px;background:var(--gl);transform:scaleX(0);transition:transform .35s}.zy .lk a:hover::after{transform:scaleX(1)}
+.zy .btn{display:inline-block;background:var(--cp);color:#fff;border:1px solid var(--cp);padding:12px 34px;font-size:18px;cursor:pointer;border-radius:60px;transition:background .3s,transform .3s,box-shadow .3s;font-weight:700}
+.zy .btn:hover{background:var(--cp2);border-color:var(--cp2);transform:translateY(-2px);box-shadow:0 12px 30px rgba(180,96,47,.35)}
+.zy .btn.o{background:transparent;border-color:rgba(246,239,225,.5);color:var(--iv)}.zy .btn.o:hover{border-color:var(--gl);color:var(--gl);box-shadow:none;background:transparent}
+.zy .bg{display:none}
+.zy .hero{position:relative;background:radial-gradient(ellipse at 25% 40%,#2c4531 0,var(--g) 65%);color:var(--iv);padding:150px 5vw 100px;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;min-height:800px;overflow:hidden}
+.zy .hero::before{content:"";position:absolute;inset:26px 26px;border:1px solid rgba(201,163,92,.35);pointer-events:none}
+.zy .hero::after{content:"";position:absolute;inset:34px 34px;border:1px solid rgba(201,163,92,.15);pointer-events:none}
+.zy .ey{font-family:Georgia,serif;font-size:13px;letter-spacing:6px;color:var(--gl);margin-bottom:20px;direction:ltr;text-align:right}
+.zy h1{font-size:clamp(58px,8.4vw,128px);line-height:1.12;font-weight:700}.zy h1 em{font-style:normal;color:var(--cp2);position:relative}
+.zy .hero p.sub{font-size:clamp(19px,2vw,24px);color:#d8cfb8;max-width:520px;margin:20px 0 36px}
+.zy .hero .bt{display:flex;gap:14px;flex-wrap:wrap}
+.zy .arch{position:relative;width:min(420px,84%);margin-inline:auto;aspect-ratio:3/4.1;border-radius:999px 999px 18px 18px;background:linear-gradient(180deg,#e9dcb9,#d6c293);border:8px solid var(--g);box-shadow:0 0 0 1px var(--gl),0 0 0 14px var(--g),0 0 0 15px rgba(201,163,92,.6),0 40px 80px rgba(0,0,0,.45);display:grid;place-items:center;overflow:hidden}
+.zy .arch svg{width:82%;animation:sw 7s ease-in-out infinite;transform-origin:50% 100%}
+@keyframes sw{50%{transform:rotate(2.5deg)}}
+.zy .arch span{position:absolute;bottom:18px;font-size:13px;color:#6d5a2c;letter-spacing:1px;font-family:"Cairo",sans-serif}
+.zy .sun{position:absolute;top:13%;inset-inline-start:22%;width:70px;height:70px;border-radius:50%;background:radial-gradient(circle,#f7e3ac,#e3b768);opacity:.9}
+.zy .orn{text-align:center;color:var(--gl);letter-spacing:14px;font-size:16px;padding:46px 0 0}
+.zy .band{position:relative;background:var(--g);color:var(--iv);padding:90px 5vw;overflow:hidden}
+.zy .band .in{max-width:900px;margin:0 auto;text-align:center;position:relative}
+.zy .band small{font-family:Georgia,serif;font-size:13px;letter-spacing:7px;color:var(--gl)}
+.zy .band h2{font-size:clamp(38px,6vw,76px);line-height:1.2;margin:8px 0 18px;font-weight:700;color:var(--cp2)}
+.zy .band p{font-size:clamp(18px,2.2vw,24px);color:#d8cfb8}.zy .band p b{color:var(--iv);font-size:1.3em;display:block;margin-bottom:6px}
+.zy .band::before,.zy .band::after{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(201,163,92,.25);border-radius:50%;top:-80px}.zy .band::before{inset-inline-start:-80px}.zy .band::after{inset-inline-end:-80px;top:auto;bottom:-80px}
+.zy .wrap{max-width:1100px;margin:0 auto;padding:100px 5vw}
+.zy .ttl{text-align:center;margin-bottom:46px}.zy .ttl div{font-family:Georgia,serif;letter-spacing:8px;font-size:13px;color:var(--cp)}
+.zy .ttl h2{font-size:clamp(50px,7vw,92px);line-height:1.15;font-weight:700;color:var(--g3)}
+.zy .ttl::after{content:"";display:block;width:90px;height:1px;background:var(--gl);margin:14px auto 0;box-shadow:0 5px 0 -0px transparent}
+.zy .cat{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-bottom:38px}
+.zy .cat button{background:transparent;border:1px solid rgba(47,74,53,.3);color:var(--g3);padding:8px 26px;border-radius:60px;font-size:18px;cursor:pointer;transition:all .3s}.zy .cat button:hover{border-color:var(--cp)}.zy .cat button.on{background:var(--g3);color:var(--iv);border-color:var(--g3)}
+.zy #items{max-width:780px;margin:0 auto}
+.zy .it{display:flex;align-items:baseline;gap:12px;padding:15px 0;animation:fi .6s both}
+.zy .it>div{flex:none;max-width:62%}.zy .it b{font-size:25px;font-weight:700;color:var(--g)}.zy .it p{color:var(--mt);font-size:16px;line-height:1.5;font-family:"Cairo",sans-serif}
+.zy .dt{flex:1;border-bottom:2px dotted rgba(47,74,53,.35);transform:translateY(-6px)}
+.zy .it em{font-style:normal;font-size:24px;color:var(--cp);font-weight:700;white-space:nowrap}
+@keyframes fi{from{opacity:0;transform:translateY(10px)}}
+.zy .nt{text-align:center;color:var(--mt);font-size:15px;margin-top:30px;font-family:"Cairo",sans-serif}
+.zy .hrs{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid rgba(47,74,53,.25);padding:40px 0}
+.zy .hrs>div{text-align:center;padding:0 20px}.zy .hrs>div+div{border-inline-start:1px solid rgba(47,74,53,.2)}
+.zy .hrs h3{font-size:26px;color:var(--cp);margin-bottom:6px}.zy .hrs p{color:var(--ink);font-size:19px}
+.zy .res{background:var(--g2);color:var(--iv);position:relative;overflow:hidden}
+.zy .res .wrap{padding-block:110px}
+.zy .rg{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.zy .rg h2{font-size:clamp(46px,6.5vw,86px);line-height:1.15;font-weight:700;color:var(--cp2);margin-bottom:12px}.zy .rg .l p{color:#d8cfb8;font-size:21px;max-width:420px}
+.zy .rg .r{background:var(--iv);color:var(--ink);padding:44px 38px 38px;border-radius:260px 260px 22px 22px;box-shadow:0 0 0 1px var(--gl),0 0 0 10px var(--g2),0 0 0 11px rgba(201,163,92,.5),0 40px 70px rgba(0,0,0,.4)}
+.zy label{display:block;font-size:16px;color:var(--mt);margin:12px 0 4px;font-family:"Cairo",sans-serif}
+.zy .rg .r label:first-child{margin-top:44px}
+.zy input,.zy select{width:100%;background:#fffaf0;border:1px solid rgba(47,74,53,.3);padding:11px 16px;font-size:18px;border-radius:12px;outline:none;color:var(--ink);transition:border-color .3s}.zy input:focus,.zy select:focus{border-color:var(--cp)}
+.zy .rg .btn{width:100%;margin-top:22px;text-align:center}
+.zy footer{background:var(--g);color:#bdb393;text-align:center;padding:30px 5vw;font-size:15px;font-family:"Cairo",sans-serif;border-top:1px solid rgba(201,163,92,.25)}
+.zy .rv{opacity:0;transform:translateY(30px);transition:opacity 1s,transform 1s}.zy .rv.on{opacity:1;transform:none}
+html.st .zy .rv{opacity:1;transform:none;transition:none}html.st .zy .it{animation:none}html.st .zy .arch svg{animation:none}
+@media(max-width:900px){.zy .lk{display:none;position:absolute;top:100%;inset-inline:0;flex-direction:column;gap:6px;background:var(--g);padding:12px 5vw 22px}.zy .lk.open{display:flex}.zy .bg{display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(201,163,92,.5);background:transparent;color:var(--iv);border-radius:50%;font-size:20px;cursor:pointer}.zy .hd{gap:14px}.zy .hd .btn{padding:8px 16px;font-size:15px}.zy .hero{grid-template-columns:1fr;padding-top:130px;min-height:0;text-align:center}.zy .hero .ey{text-align:center}.zy .hero p.sub{margin-inline:auto}.zy .hero .bt{justify-content:center}.zy .hero::before{inset:14px}.zy .hero::after{inset:20px}.zy .arch{width:min(300px,80%)}.zy .hrs{grid-template-columns:1fr;gap:26px}.zy .hrs>div+div{border:0;border-top:1px solid rgba(47,74,53,.2);padding-top:26px}.zy .rg{grid-template-columns:1fr;gap:36px}.zy .wrap{padding-block:64px}.zy .rg .r{padding-inline:24px}.zy .it>div{max-width:58%}.zy .it b{font-size:21px}}
+@media(prefers-reduced-motion:reduce){.zy *{animation:none!important;transition:none!important}.zy .rv{opacity:1;transform:none}}
+</style></head><body>
+<div class="zy" id="r"><div class="demo">نسخة تجريبية: الأسماء والأسعار والمواعيد مؤقتة</div>
+<header class="hd" id="hd"><a class="lg" href="#top"><b>زيتون</b><small>ZAYTOUN KITCHEN</small></a>
+<nav class="lk" id="lk"><a href="#about">طبق اليوم</a><a href="#menu">المنيو</a><a href="#hrs">المواعيد</a><a href="#book">احجز طاولة</a></nav>
+<a class="btn" href="#book">احجز طاولتك</a><button class="bg" id="bg" type="button" aria-label="القائمة" aria-expanded="false">&#9776;</button></header>
+<section class="hero" id="top"><div><div class="ey">EGYPTIAN HOME KITCHEN</div><h1>أكل بيتي،<br>بطعم <em>الأصل</em></h1>
+<p class="sub">مطبخ مصري على نار هادية، بمكونات طازجة كل يوم. تعالى اتغدى معانا أو اطلب لحد البيت.</p>
+<div class="bt"><a class="btn" href="#book">احجز طاولتك</a><a class="btn o" href="#menu">شوف المنيو</a></div></div>
+<div class="arch" aria-hidden="true"><i class="sun"></i><svg viewBox="0 0 120 130"><g fill="none" stroke="#2f4a35" stroke-width="2.6" stroke-linecap="round"><path d="M22 124 C48 100 74 70 104 18"/><path d="M42 98 C30 84 33 72 43 64 C52 74 52 88 42 98Z" fill="#2f4a35"/><path d="M58 82 C46 68 51 56 61 51 C68 61 68 73 58 82Z" fill="#2f4a35"/><path d="M76 60 C67 48 71 37 81 34 C86 43 86 53 76 60Z" fill="#2f4a35"/><path d="M92 38 C86 30 88 22 96 19 C99 26 98 33 92 38Z" fill="#2f4a35"/><path d="M50 104 C62 96 70 98 76 106 C66 112 56 112 50 104Z" fill="#3d6347"/><path d="M68 84 C80 76 88 78 94 86 C84 92 74 92 68 84Z" fill="#3d6347"/><ellipse cx="88" cy="104" rx="10" ry="14" fill="#b4602f" stroke="none"/><ellipse cx="64" cy="122" rx="9" ry="11" fill="#8a3e1d" stroke="none"/></g></svg><span>رسم تعبيري، بدل صورة الطبق</span></div></section>
+<section class="band" id="about"><div class="in rv"><small>TODAY'S DISH</small><h2>طبق اليوم</h2><p><b>طاجن بامية باللحمة</b>بامية فرز أول على نار هادية مع صلصة طماطم وثوم. السعر التجريبي 165 جنيه.</p></div></section>
+<div class="orn">✦ ✦ ✦</div>
+<div class="wrap" id="menu"><div class="ttl rv"><div>MENU</div><h2>المنيو</h2></div>
+<div class="mn rv"><div class="cat" id="cat"></div><div id="items"></div></div><p class="nt">أسعار تجريبية تتعدل حسب المطعم.</p></div>
+<div class="wrap" id="hrs" style="padding-top:0"><div class="hrs rv"><div><h3>المواعيد</h3><p>كل يوم<br>12 ظهرًا - 12 بالليل</p></div><div><h3>العنوان</h3><p>عنوان المطعم هنا<br>المدينة، مصر</p></div><div><h3>التوصيل</h3><p>اطلب على واتساب<br>وبنوصلك</p></div></div></div>
+<section class="res" id="book"><div class="wrap"><div class="rg"><div class="l rv"><h2>احجز طاولة</h2><p>اكتب بياناتك وهتتحول لرسالة واتساب جاهزة نبعتها للمطعم.</p></div>
+<div class="r rv"><label for="nm">الاسم</label><input id="nm"><label for="ph">الموبايل</label><input id="ph" inputmode="tel"><label for="gs">عدد الأفراد</label><select id="gs"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>8</option></select><label for="dt">الميعاد</label><input id="dt" placeholder="مثلًا: الجمعة 8 مساءً"><a class="btn" id="wa" target="_blank" rel="noopener">احجز على واتساب</a></div></div></div></section>
+<footer>زيتون · نموذج تجريبي · تصميم كريم صقر</footer>
+</div><script>(function(){const R=document.getElementById("r");const WHATSAPP="201000000000";
+if(/static/.test(location.search))document.documentElement.classList.add("st");
+const $=s=>R.querySelector(s);
+const MENU={"المقبلات":[["سلطة بلدي","خيار وطماطم وجرجير وليمون",45],["بابا غنوج","باذنجان مشوي وطحينة",50],["ورق عنب","محشي بالأرز والخضرة",70]],"الأطباق الرئيسية":[["كفتة مشوية","مع أرز وسلطة",140],["نص فرخة مشوية","مع بطاطس وسلطة",120],["طاجن بامية باللحمة","على نار هادية",165],["ملوخية بالفراخ","مع أرز وعيش",110]],"الحلويات":[["أم علي","بالمكسرات والقشطة",60],["مهلبية","بماء الورد",40],["كنافة بالقشطة","ساخنة من الفرن",65]],"المشروبات":[["عصير ليمون بالنعناع","",35],["شاي بالنعناع","",20],["قهوة تركي","",30]]};
+const cat=$("#cat"),box=$("#items");
+function show(k){box.innerHTML=MENU[k].map((r,i)=>'<div class="it" style="animation-delay:'+i*.07+'s"><div><b>'+r[0]+'</b>'+(r[1]?'<p>'+r[1]+'</p>':'')+'</div><span class="dt"></span><em>'+r[2]+' ج</em></div>').join("")}
+Object.keys(MENU).forEach((k,i)=>{const b=document.createElement("button");b.type="button";b.textContent=k;if(!i)b.className="on";b.addEventListener("click",()=>{cat.querySelectorAll("button").forEach(x=>x.classList.remove("on"));b.classList.add("on");show(k)});cat.appendChild(b)});
+show(Object.keys(MENU)[0]);
+function wa(){const t="أهلًا، أنا "+($("#nm").value||"")+" وعايز أحجز طاولة لـ "+$("#gs").value+" أفراد، الميعاد: "+($("#dt").value||"")+". موبايلي: "+($("#ph").value||"");$("#wa").href="https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(t)}
+R.querySelectorAll("#nm,#ph,#gs,#dt").forEach(e=>e.addEventListener("input",wa));wa();
+const lk=$("#lk"),bg=$("#bg"),hd=$("#hd");bg.addEventListener("click",()=>{const o=lk.classList.toggle("open");bg.setAttribute("aria-expanded",o)});
+addEventListener("scroll",()=>hd.classList.toggle("fx",scrollY>200),{passive:true});
+R.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{e.preventDefault();lk.classList.remove("open");const t=R.querySelector(a.getAttribute("href"));t&&t.scrollIntoView({behavior:"smooth"})}));
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("on");io.unobserve(x.target)}}),{threshold:.12});R.querySelectorAll(".rv").forEach(e=>io.observe(e));
+})()</script></body></html>
