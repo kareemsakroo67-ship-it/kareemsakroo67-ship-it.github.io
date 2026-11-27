@@ -99,9 +99,9 @@ const $=s=>R.querySelector(s);
 const link=t=>"https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(DEMO+t);
 let day="السبت";const ch=$("#ch");
 ["السبت","الأحد","الاثنين","الثلاثاء"].forEach((d,i)=>{const b=document.createElement("button");b.type="button";b.textContent=d;if(!i)b.className="on";b.addEventListener("click",()=>{ch.querySelectorAll("button").forEach(x=>x.classList.remove("on"));b.classList.add("on");day=d;q()});ch.appendChild(b)});
-function q(){$("#qa").href=link((document.documentElement.lang==="en")?"Hi, I'd like to book a "+$("#q").value+" visit on "+__tr(day):"أهلًا، عايز أحجز كشف "+$("#q").value+" يوم "+day)}
+function q(){$("#qa").href=link((document.documentElement.lang==="en")?"Hi, I'd like to book a visit for "+$("#q").value+" on "+__tr(day):"أهلًا، عايز أحجز كشف "+$("#q").value+" يوم "+day)}
 $("#q").addEventListener("change",q);q();
-function w(){$("#wa").href=link((document.documentElement.lang==="en")?"Hi, I'm "+($("#nm").value||"")+" and I'd like to book a "+$("#sp2").value+" visit. Preferred day: "+($("#dy").value||"")+". My mobile: "+($("#ph").value||""):"أهلًا، أنا "+($("#nm").value||"")+" وعايز أحجز كشف "+$("#sp2").value+". اليوم المناسب: "+($("#dy").value||"")+". موبايلي: "+($("#ph").value||""))}
+function w(){$("#wa").href=link((document.documentElement.lang==="en")?"Hi, I'm "+($("#nm").value||"")+" and I'd like to book a visit for "+$("#sp2").value+". Preferred day: "+($("#dy").value||"")+". My mobile: "+($("#ph").value||""):"أهلًا، أنا "+($("#nm").value||"")+" وعايز أحجز كشف "+$("#sp2").value+". اليوم المناسب: "+($("#dy").value||"")+". موبايلي: "+($("#ph").value||""))}
 R.querySelectorAll("#nm,#ph,#sp2,#dy").forEach(e=>e.addEventListener("input",w));w();
 const F=[["هل لازم أحجز قبلها؟","الحجز المسبق بينظم الوقت، لكن العيادة بتحدد سياستها."],["إزاي أغير ميعادي؟","ابعت رسالة على واتساب العيادة وقول الميعاد الجديد."],["بتقبلوا تأمين؟","الإجابة بتتحدد من العيادة الحقيقية."],["الدفع بيتم إزاي؟","بيتحدد في العيادة، وده مثال لسؤال شائع."]];
 const fq=$("#faq");
