@@ -14,6 +14,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2319f0ff'/%3E%3Ctext x='32' y='45' font-size='38' font-weight='900' text-anchor='middle' font-family='Arial' fill='%2305060a'%3EK%3C/text%3E%3C/svg%3E">
 <link rel="preload" as="image" href="assets/portrait.webp">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Kareem Sakr","jobTitle":"Web developer (student)","url":"https://kareemsakroo67-ship-it.github.io/","sameAs":["https://github.com/kareemsakroo67-ship-it","https://www.linkedin.com/in/kareem-sakr-ba9810452"],"email":"Kareemsakroo67@gmail.com"}</script>
+<script>(function(){try{var d=document.documentElement,q=location.search,f=/[?&]intro/.test(q);if(!/static/.test(q)&&!matchMedia("(prefers-reduced-motion: reduce)").matches&&(f||!sessionStorage.getItem("ks_intro"))){var l=localStorage.getItem("ks_lang")||"en";if(/[?&]lang=ar/.test(q))l="ar";if(/[?&]lang=en/.test(q))l="en";d.lang=l;d.dir=l==="ar"?"rtl":"ltr";d.className+=" intro";sessionStorage.setItem("ks_intro","1")}}catch(e){}})()</script>
 <style>
 :root{--bg:#05060a;--bg2:#0a0d13;--card:#0e1219;--cy:#19f0ff;--vi:#7a5cff;--tx:#eef2f7;--mut:#94a0b0;--ln:rgba(255,255,255,.12);--mono:ui-monospace,SFMono-Regular,Consolas,Menlo,monospace;--ar:"Cairo","Tajawal","Noto Sans Arabic","Segoe UI",Tahoma,Arial,sans-serif;--en:Inter,"Segoe UI","Helvetica Neue",Arial,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -100,10 +101,20 @@ footer{background:#030405;color:#7d8795;font-family:var(--mono);padding:26px 5vw
 @media(max-width:900px){.hero .in,.ab,.cg,.cs{grid-template-columns:1fr}.pv{max-width:340px;margin-bottom:30px}
 .lk{display:none;position:absolute;top:100%;inset-inline:0;background:#05060a;flex-direction:column;padding:10px 5vw 18px;margin:0;border-bottom:1px solid var(--ln)}.lk.on{display:flex}
 .bur{display:inline-block;margin-inline-start:auto}.lk+.pill{margin-inline-start:0}nav.top .btn.sm{display:none}section{padding:72px 5vw}.cs .tx{padding:24px}.cs .shot{padding:16px}}
+html.intro{overflow:hidden}#intro{display:none}html.intro #intro{display:flex;font-family:var(--en);direction:ltr;position:fixed;inset:0;z-index:10000;background:radial-gradient(60% 50% at 50% 45%,rgba(122,92,255,.28),transparent 70%),radial-gradient(40% 35% at 70% 60%,rgba(25,240,255,.16),transparent 70%),var(--bg);flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;cursor:pointer;transition:opacity .8s ease,transform .8s ease,visibility .8s}#intro.out{opacity:0;transform:scale(1.04);visibility:hidden;pointer-events:none}
+#intro::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.04) 0 1px,transparent 1px 12.5%),repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 1px,transparent 1px 80px);-webkit-mask-image:radial-gradient(circle at 50% 50%,#000 0,transparent 70%);mask-image:radial-gradient(circle at 50% 50%,#000 0,transparent 70%)}
+#intro .nm{position:relative;font-size:clamp(44px,11vw,128px);font-weight:900;line-height:1.1;letter-spacing:-.02em;display:flex;gap:.28em;flex-wrap:wrap;justify-content:center}
+#intro .nm i{font-style:normal;display:inline-block;opacity:0;filter:blur(14px);transform:translateY(26px);animation:iu 1s cubic-bezier(.2,.8,.2,1) forwards}#intro .nm i:nth-child(2){animation-delay:.25s;color:var(--cy)}
+#intro .tl{position:relative;margin-top:18px;font-family:var(--mono);font-size:clamp(12px,3.2vw,18px);letter-spacing:.2em;text-transform:uppercase;color:var(--mut);opacity:0;animation:iu2 .9s ease 1.1s forwards}
+#intro .bar{position:absolute;bottom:0;inset-inline:0;height:3px;background:rgba(255,255,255,.08)}#intro .bar i{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--vi),var(--cy));transform-origin:left;transform:scaleX(0);animation:ib 4.5s linear forwards}
+#intro .ds{direction:ltr;unicode-bidi:isolate;font-family:var(--en);position:relative;margin-top:22px;max-width:680px;font-size:clamp(16px,4.2vw,22px);font-weight:600;line-height:1.5;color:#dfe6ee;opacity:0;transform:translateY(10px);animation:iu3 .9s ease 1.7s forwards}#intro .hint{position:absolute;bottom:26px;font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#5f6b7a;opacity:0;animation:iu2 .8s ease 2s forwards}
+@keyframes iu{to{opacity:1;filter:blur(0);transform:none}}@keyframes iu3{to{opacity:1;transform:none}}@keyframes iu2{to{opacity:1}}@keyframes ib{to{transform:scaleX(1)}}
+@media(prefers-reduced-motion:reduce){#intro{display:none!important}html.intro{overflow:auto}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
+<div id="intro" aria-hidden="true" lang="en" dir="ltr"><div class="nm"><i>Kareem</i><i>Sakr</i></div><div class="tl">Web Developer · Student</div><div class="ds" lang="en" dir="ltr">Crafting Digital Experiences That Leave a Lasting Impression.</div><div class="hint">Tap to skip</div><div class="bar"><i></i></div></div>
 <a class="skip" href="#main"><span class="ar" lang="ar">تخطَّ إلى المحتوى</span><span class="en" lang="en">Skip to content</span></a>
 <div id="pg" aria-hidden="true"><i></i></div>
 <nav class="top" id="top" aria-label="Main">
@@ -170,6 +181,7 @@ footer{background:#030405;color:#7d8795;font-family:var(--mono);padding:26px 5vw
 </main>
 <footer><span><span class="ar" lang="ar">© 2026 كريم صقر</span><span class="en" lang="en">© 2026 Kareem Sakr</span></span><span><span class="ar" lang="ar">مشاريع تجريبية · طالب · مصر</span><span class="en" lang="en">Concept projects · Student · Egypt</span></span></footer>
 <script>
+(function(){var d=document.documentElement,it=document.getElementById("intro");if(!it||!d.classList.contains("intro"))return;var done=false;function end(){if(done)return;done=true;it.classList.add("out");setTimeout(function(){d.classList.remove("intro");it.style.display="none"},850)}it.addEventListener("click",end);document.addEventListener("keydown",function(e){if(e.key==="Escape"||e.key==="Enter"||e.key===" ")end()});setTimeout(end,4500)})();
 (function(){"use strict";
 var d=document.documentElement,$=function(s){return document.querySelector(s)};
 function setLang(l){d.lang=l;d.dir=l==="ar"?"rtl":"ltr";document.title=l==="ar"?"كريم صقر | مطوّر ويب":"Kareem Sakr | Web Developer Portfolio";try{localStorage.setItem("ks_lang",l)}catch(e){}}
